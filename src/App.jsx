@@ -8,6 +8,7 @@ import Service from './pages/services';
 import Article from './pages/Article';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/privacy';
+import Terms from './pages/Terms';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             <Route path='/article' element={<Article />} />
             <Route path='/contact' element={<Contact />} />
             <Route path='/privacy' element={<PrivacyPolicy />} />
+            <Route path='/terms' element={<Terms />} />
 
           </Route>
         </Routes>

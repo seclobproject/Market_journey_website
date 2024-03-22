@@ -4,7 +4,7 @@ import { faArrowRight, faCheck } from '@fortawesome/free-solid-svg-icons';
 
 //------ images -------
 import hero_shape from '../assets/images/shape/hero-shape.png'
-import hero_banner from '../assets/images/banner/hp-slide-1.jpeg'
+import hero_banner from '../assets/images/banner/trad.jpg'
 import aboutbg1 from '../assets/images/bg/about-bg-1.png'
 import article1 from '../assets/images/news/news-1.jpeg'
 import article2 from '../assets/images/news/news-2.jpeg'
@@ -65,15 +65,15 @@ const Home = () => {
                                                     data-delay=".2s"
                                                     data-duration=".5s"
                                                 >
-                                                    Pixen Your
-                                                    <br />Printing Solution
+                                                    Making Trade Simple, 
+                                                    Making Trade Happen
                                                 </h2>
                                                 <p
                                                     data-animation="fadeInUp"
                                                     data-delay=".5s"
                                                     data-duration=".7s"
                                                 >
-                                                    Magnificence in the realistic interchanges
+                                                    Discover the Flavor of Trade
                                                 </p>
                                                 <Link
                                                     data-animation="fadeInUp"
@@ -244,24 +244,21 @@ const Home = () => {
                             <div className="section-header mb-40">
                                 <h4 className="sub-heading mb-10">About Us</h4>
                                 <h2 className="section-title mb-35">
-                                    From Structure To Conveyance
+                                    Connect Our Unique Concept
                                 </h2>
                                 <p>
-                                    Libero aliquam eiget rhoncus elit quis mattis tos neque ullco
-                                    qua praesent interdum orc torristique aenean at dictumst velit
-                                    fames molestie tristique magna sociosqu ine rhoncuis in
-                                    cubilia magno senectus sociis tortor enim.
+                                    India’s first largest company and Kerala’s first trading cafe network aims to expand into
+                                    the 2023 stock market, forging a dynamic presence with our unique blend of culture and
+                                    investment process. Join us in shaping the future of trading.
                                 </p>
                             </div>
                             <div className="about-lists">
                                 <ul>
                                     <li>
-                                        <FontAwesomeIcon icon={faCheck} /> Magna cubilia sapien vivamus
-                                        vestibulum iner consectetuer.
+                                        <FontAwesomeIcon icon={faCheck} />&nbsp;&nbsp; Commitment to providing proper training.
                                     </li>
                                     <li>
-                                        <FontAwesomeIcon icon={faCheck} /> Urna faucibus netus Inceptos qu
-                                        hac sem iaculis lectus.
+                                        <FontAwesomeIcon icon={faCheck} />&nbsp;&nbsp; We aim to bring a demat account to every household in Kerala.
                                     </li>
                                 </ul>
                                 <a
@@ -299,7 +296,7 @@ const Home = () => {
                                             alt=""
                                         /></span>
                                 </h4>
-                                <h2 className="section-title">Flawless Printing</h2>
+                                <h2 className="section-title">Our Services</h2>
                             </div>
                         </div>
                     </div>
@@ -310,10 +307,10 @@ const Home = () => {
                                     <img src="../assets/images/icons/s-1.png" alt="" />
                                 </div>
                                 <div className="service-item__content">
-                                    <h4 className="service-item__title">Banner Printing</h4>
+                                    <h4 className="service-item__title">Trading Cafe</h4>
                                     <p>
-                                        Dise duis auctor an cume del enima felise proins parturient
-                                        port a nostra
+                                        Our Trading Cafe offers a rich tapestry of real-time discussions, expert sessions, and
+                                        live trading experiences, creating an environment that fosters growth and collaboration.
                                     </p>
                                 </div>
                             </div>
@@ -324,10 +321,11 @@ const Home = () => {
                                     <img src="../assets/images/icons/s-2.png" alt="" />
                                 </div>
                                 <div className="service-item__content">
-                                    <h4 className="service-item__title">Poster Printing</h4>
+                                    <h4 className="service-item__title">Premium Call Outs</h4>
                                     <p>
-                                        Dise duis auctor an cume del enima felise proins parturient
-                                        port a nostra
+                                        Our Premium Call Outs service provides you with helping you make informed decisions
+                                        and capitalize on market opportunities. Elevate your trading experience with the
+                                        precision and expertise offered by Market Journey.
                                     </p>
                                 </div>
                             </div>
@@ -338,10 +336,10 @@ const Home = () => {
                                     <img src="../assets/images/icons/s-3.png" alt="" />
                                 </div>
                                 <div className="service-item__content">
-                                    <h4 className="service-item__title">Flyer Printing</h4>
+                                    <h4 className="service-item__title">Franchise</h4>
                                     <p>
-                                        Dise duis auctor an cume del enima felise proins parturient
-                                        port a nostra
+                                        District franchise, Zonal franchise, and Mobile franchise to navigate the world of trading
+                                        and investments, while benefiting from a rewarding entrepreneurial venture.
                                     </p>
                                 </div>
                             </div>
@@ -352,10 +350,10 @@ const Home = () => {
                                     <img src="../assets/images/icons/s-4.png" alt="" />
                                 </div>
                                 <div className="service-item__content">
-                                    <h4 className="service-item__title">Business Card</h4>
+                                    <h4 className="service-item__title"> Certified Online-Offline Batches</h4>
                                     <p>
-                                        Dise duis auctor an cume del enima felise proins parturient
-                                        port a nostra
+                                        District franchise, Zonal franchise, and Mobile franchise to navigate the world of trading
+                                        and investments, while benefiting from a rewarding entrepreneurial venture.
                                     </p>
                                 </div>
                             </div>

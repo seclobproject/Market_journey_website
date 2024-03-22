@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/images/logo/logo.png'
 import { Link } from 'react-router-dom'
 const Header = () => {
+    const [toggleHeader,setToggleHeader]=useState(false)
     const scrollTop = () => {
         window.scrollTo({ top: 0 });
     }
+    console.log('====================================');
+    console.log(toggleHeader);
+    console.log('====================================');
     return (
         <header className="header">
             <div className="header__bottom">
@@ -15,7 +19,8 @@ const Header = () => {
                                 <Link onClick={scrollTop} className="site-logo" to="/"
                                 ><img src={logo} alt="LOGO"
                                     /></Link>
-                                <div className="mainmenu d-none d-lg-block">
+                                <div className={`mainmenu ${toggleHeader ? 'active_menus' : 'd-none'} d-lg-block`}>
+
                                     <nav id="mobile-menu">
                                         <ul>
                                             <li onClick={scrollTop} className="menu_has_children">
@@ -33,22 +38,24 @@ const Header = () => {
                                 </div>
                                 <a className="quote-btn" href="contact">Login</a>
 
-                                <div className="mobile-menu mean-container d-block d-lg-none">
+                                <div className={`mobile-menu mean-container d-lg-none`}>
                                     <div className="mean-bar">
-                                        <a href="#nav" className="meanmenu-reveal"
-                                        ><span></span><span></span><span></span></a
-                                        ><a
-                                            href="#nav"
-                                            className="meanmenu-reveal d-none"
+                                        <a onClick={() => setToggleHeader(true)} className={`meanmenu-reveal ${toggleHeader? 'd-none': 'd-block'}`}
+                                        ><span></span><span></span><span></span></a><a 
+                                            onClick={()=>setToggleHeader(false)}
+                                        
+                                            className={` ${toggleHeader ? 'd-block': 'd-none'} `}
                                             style={{
-                                                right: 0,
+                                                position:'absolute',
+                                                top:10,
+                                                right: 10,
                                                 left: 'auto',
                                                 textAlign: 'center',
                                                 textIndent: 0,
-                                                fontSize: 18
+                                                fontSize: 18,
+                                                color:'#f7ae15'
                                             }}
-                                        >X</a
-                                        >
+                                        >X</a>
                                     </div>
                                 </div>
                             </div>

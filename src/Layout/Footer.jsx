@@ -76,9 +76,8 @@ const Footer = () => {
                             <h4 className="widget-title">Get Help</h4>
                             <div className="recent-news mt-none-20">
                                 <div className="recent-news__content mt-20">
-                                    <a className="recent-news__title" href="news-details"
-                                    >Contact Us</a
-                                    >
+                                    <Link className="recent-news__title" to="/contact"
+                                    >Contact Us</Link>
                                     {/* <a className="recent-news__date" href="news-details"
                                   >Sep 20. 2020</a
                                   > */}
@@ -91,9 +90,8 @@ const Footer = () => {
                                   > */}
                                 </div>
                                 <div className="recent-news__content mt-10">
-                                    <a className="recent-news__title" href="news-details"
-                                    >Terms & Condition</a
-                                    >
+                                    <Link className="recent-news__title" to="/terms"
+                                    >Terms & Condition</Link>
                                     {/* <a className="recent-news__date" href="news-details"
                                   >Sep 21. 2020</a
                                   > */}

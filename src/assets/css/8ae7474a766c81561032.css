@@ -12776,11 +12776,11 @@ h6 {
 }
 .navarea .mean-container a .meanmenu-reveal {
   margin-top: -49px;
-  color: #F7AE15;
-  border-color: #F7AE15;
+  color: #f7ae15;
+  border-color: #f7ae15;
 }
 .navarea .mean-container a .meanmenu-reveal span {
-  background: #F7AE15;
+  background: #f7ae15;
 }
 .navarea .mean-container .mean-nav {
   -webkit-transform: translateY(16px);
@@ -12819,7 +12819,7 @@ h6 {
     -moz-box-flex: 0;
     flex: 0 0 81%;
     -ms-flex: 0 0 81%;
-    max-width: 81%;
+    /* max-width: 81%; */
     text-align: right;
     padding-left: 0;
   }
@@ -13018,9 +13018,19 @@ h6 {
     padding: 17px 30px;
   }
 }
-@media (max-width: 1199px) {
+@media (max-width: 990px) {
   .quote-btn {
     display: none;
+  }
+   .active_menus {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 60%; */
+    padding: 4rem 8%;
+    background-color:white;
   }
 }
 .call-info {
@@ -13344,14 +13354,14 @@ input.form-control-sm {
   }
 }
 .hero__content p {
-  font-size: 36px;
+  font-size: 30px;
   color: #fff;
   position: relative;
   z-index: 3;
 }
 @media (max-width: 1726px) {
   .hero__content p {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
@@ -13514,7 +13524,7 @@ input.form-control-sm {
 }
 .hero__title {
   color: #0c2957;
-  font-size: 90px;
+  font-size: 80px;
   line-height: 110px;
   color: #fff;
   font-weight: 700;
@@ -28514,23 +28524,26 @@ a.meanmenu-reveal {
   display: none !important;
 }
 .mean-container a.meanmenu-reveal {
-  border: 1px solid #086ad8;
+  /* border: 1px solid  #f7ae15; */
   width: 30px;
   padding: 13px 10px;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .mean-container .mean-bar {
   background: transparent;
 }
 .mean-container a.meanmenu-reveal span {
-  background: #086ad8;
+  background: #f7ae15;
   margin-top: 5px;
 }
 .mean-container .mean-bar {
   padding: 0;
 }
 .mean-container a.meanmenu-reveal {
-  color: #086ad8;
+  color:  #f7ae15;
   margin-top: -41px;
   padding: 0;
   width: 50px;
