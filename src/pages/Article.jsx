@@ -1,10 +1,17 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import newDetails from '../assets/images/news/news-details-1.jpeg'
 import quoteIcon from '../assets/images/icons/quote-icon.png'
 import newsInner1 from '../assets/images/news/news-inner-1.jpeg'
 import relatedPost1 from '../assets/images/news/releted-post-thumb-1.jpeg'
 import relatedPost2 from '../assets/images/news/releted-post-thumb-2.jpeg'
 const Article = () => {
+    useEffect(()=>{
+        const scrollTop = () => {
+            window.scrollTo({ top: 0 });
+        }
+        scrollTop()
+    },[])
+ 
   return (
     <div>
           <section

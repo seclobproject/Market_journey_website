@@ -1,10 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import breadcrumbbg1 from '../assets/images/bg/breadcrumb-bg-1.jpeg'
 import contactIllustation from '../assets/images/bg/contactillu.webp'
 const Contact = () => {
     const [mail,setMail]=useState({})
+    useEffect(() => {
+        const scrollTop = () => {
+            window.scrollTo({ top: 0 });
+        }
+        scrollTop()
+    }, [])
 
     const sendEmail = async(e) => {
         e.preventDefault();

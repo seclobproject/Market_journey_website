@@ -11359,7 +11359,7 @@ span {
   background: #f7f7f7 !important;
 }
 .theme-bg {
-  background: #fd4a36;
+  background: #F7AE15;
 }
 .white {
   color: #fff;
@@ -13218,7 +13218,7 @@ input.form-control-sm {
 }
 .site-btn {
   display: inline-block;
-  background: #00335b;
+  background: #0c2957;
   color: #fff;
   padding-right: 40px;
   font-size: 13px;
@@ -13271,10 +13271,10 @@ input.form-control-sm {
   color: #0c2957;
 }
 .site-btn__s3:hover {
-  background: #1f1f20;
+  background:#0c2957;
 }
 .site-btn__s3 .icon {
-  background: #fd4a36;
+  background:#0c2957;
   color: #fff;
 }
 .site-btn__2 {
@@ -14357,6 +14357,10 @@ input.form-control-sm {
 .service-item__icon--4 {
   background: #0084ff;
 }
+.service-item__icon--5 {
+  background: #0c2957;
+}
+
 .service-item__icon--noborder {
   border-radius: 5px 0 0 5px;
 }
@@ -14394,7 +14398,7 @@ input.form-control-sm {
 }
 .service-item__content {
   background: #fff;
-  padding: 38px 30px 38px 40px;
+  padding: 18px 30px 18px 40px;
 }
 @media (max-width: 767px) {
   .service-item__content {
@@ -14602,7 +14606,7 @@ input.form-control-sm {
 }
 .testimonial-area__3 {
   background: #0d2f64;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 .testimonial-item {
   display: -webkit-flex;
@@ -17946,7 +17950,7 @@ input.form-control-sm {
   margin-top: 5px;
 }
 .contact-info:hover {
-  background: #fd4a36;
+  background: #F7AE15;
 }
 .contact-info:hover .contact-info__title,
 .contact-info:hover a,

@@ -5,6 +5,7 @@ const Header = () => {
     const [toggleHeader,setToggleHeader]=useState(false)
     const scrollTop = () => {
         window.scrollTo({ top: 0 });
+        setToggleHeader(false)
     }
     console.log('====================================');
     console.log(toggleHeader);
@@ -30,13 +31,13 @@ const Header = () => {
                                             <li onClick={scrollTop}><Link to="/about">About</Link></li>
 
                                             <li onClick={scrollTop}><Link to="service">Services</Link></li>
-                                            <li onClick={scrollTop}><Link to="article">Article</Link></li>
+                                            <li onClick={scrollTop}><Link to="article">Blogs</Link></li>
 
                                             <li onClick={scrollTop}><Link to="contact">Contact</Link></li>
                                         </ul>
                                     </nav>
                                 </div>
-                                <a className="quote-btn" href="contact">Login</a>
+                                <Link className="quote-btn" to="contact">Login</Link>
 
                                 <div className={`mobile-menu mean-container d-lg-none`}>
                                     <div className="mean-bar">

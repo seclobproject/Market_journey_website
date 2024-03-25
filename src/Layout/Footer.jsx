@@ -65,7 +65,7 @@ const Footer = () => {
                                     ><FontAwesomeIcon icon={faAngleRight} /> Article</Link>
                                 </li>
                                 <li onClick={scrollTop}>
-                                    <Link href="/contact"
+                                    <Link to="/contact"
                                     ><FontAwesomeIcon icon={faAngleRight} />Contact</Link>
                                 </li>
                             </ul>

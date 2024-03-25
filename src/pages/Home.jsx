@@ -1,6 +1,8 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, faCheck } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import PricingItem from '../Components/PricingItem';
 
 //------ images -------
 import hero_shape from '../assets/images/shape/hero-shape.png'
@@ -9,8 +11,12 @@ import aboutbg1 from '../assets/images/bg/about-bg-1.png'
 import article1 from '../assets/images/news/news-1.jpeg'
 import article2 from '../assets/images/news/news-2.jpeg'
 import article3 from '../assets/images/news/news-3.jpeg'
-import { Link } from 'react-router-dom';
-import PricingItem from '../Components/PricingItem';
+import Tradcafe from '../assets/images/icons/tradingcafe.jpg'
+import franchise from '../assets/images/icons/franchise.svg'
+import medal from '../assets/images/icons/medal.svg'
+import algo from '../assets/images/icons/algo.svg'
+import premium from '../assets/images/icons/premium.svg'
+
 
 const Home = () => {
     return (
@@ -46,7 +52,7 @@ const Home = () => {
                     </div>
                 </div>
             </div> */}
-            
+
             <section className="hero position-relative">
                 <div className="swiper" autoplaydisableoninteraction="false">
                     <div className="swiper-wrapper">
@@ -65,7 +71,7 @@ const Home = () => {
                                                     data-delay=".2s"
                                                     data-duration=".5s"
                                                 >
-                                                    Making Trade Simple, 
+                                                    Making Trade Simple,
                                                     Making Trade Happen
                                                 </h2>
                                                 <p
@@ -146,88 +152,7 @@ const Home = () => {
                 </div>
 
             </section>
-            <section className="feature-area pt-120">
-                <div className="container">
-                    <div className="row justify-content-center">
-                        <div className="col-xl-8 text-center">
-                            <div className="section-header mb-50">
-                                <h4 className="sub-heading mb-25">
-                                    <span
-                                    ><img
-                                            src="../assets/images/shape/heading-shape-1.png"
-                                            className="mr-5"
-                                            alt="" /></span
-                                    >Company Feature<span
-                                    ><img
-                                            src="../assets/images/shape/heading-shape-2.png"
-                                            className="ml-5"
-                                            alt=""
-                                        /></span>
-                                </h4>
-                                <h2 className="section-title">Digital Printing</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row mt-none-30">
-                        <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
-                            <div className="feature-item">
-                                <div className="feature-item__icon feature-item__icon--1">
-                                    <img src="../assets/images/icons/f-1.png" alt="" />
-                                </div>
-                                <div className="feature-item__content">
-                                    <h4 className="feature-item__title">Digital Printing</h4>
-                                    <p>
-                                        Dis duis auctor an cum vel enim felis proins parturient port
-                                        nostra penas
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
-                            <div className="feature-item">
-                                <div className="feature-item__icon feature-item__icon--2">
-                                    <img src="../assets/images/icons/f-2.png" alt="" />
-                                </div>
-                                <div className="feature-item__content">
-                                    <h4 className="feature-item__title">Brand Printing</h4>
-                                    <p>
-                                        Dis duis auctor an cum vel enim felis proins parturient port
-                                        nostra penas
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
-                            <div className="feature-item">
-                                <div className="feature-item__icon feature-item__icon--3">
-                                    <img src="../assets/images/icons/f-3.png" alt="" />
-                                </div>
-                                <div className="feature-item__content">
-                                    <h4 className="feature-item__title">3d Printing</h4>
-                                    <p>
-                                        Dis duis auctor an cum vel enim felis proins parturient port
-                                        nostra penas
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
-                            <div className="feature-item">
-                                <div className="feature-item__icon feature-item__icon--4">
-                                    <img src="../assets/images/icons/f-4.png" alt="" />
-                                </div>
-                                <div className="feature-item__content">
-                                    <h4 className="feature-item__title">Offset Printing</h4>
-                                    <p>
-                                        Dis duis auctor an cum vel enim felis proins parturient port
-                                        nostra penas
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
             <section className="about-area pt-130 pb-130">
                 <div className="container">
                     <div className="row justify-content-between">
@@ -261,23 +186,21 @@ const Home = () => {
                                         <FontAwesomeIcon icon={faCheck} />&nbsp;&nbsp; We aim to bring a demat account to every household in Kerala.
                                     </li>
                                 </ul>
-                                <a
+                                <Link
                                     data-animation="fadeInUp"
                                     data-delay=".7s"
                                     data-duration=".9s"
                                     className="site-btn mt-55"
-                                    href="about"
+                                    to="about"
                                 ><span className="icon"
                                 ><FontAwesomeIcon icon={faArrowRight} />
                                     </span>
-                                    Read More</a
-                                >
+                                    Read More</Link>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
             <section className="service-area pt-125 pb-125">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -303,8 +226,8 @@ const Home = () => {
                     <div className="row mt-none-50">
                         <div className="col-xl-6 col-lg-6 mt-50">
                             <div className="service-item d-flex">
-                                <div className="service-item__icon service-item__icon--1">
-                                    <img src="../assets/images/icons/s-1.png" alt="" />
+                                <div className="service-item__icon "  >
+                                    <img src={Tradcafe} alt="" style={{ width: '130px' }} />
                                 </div>
                                 <div className="service-item__content">
                                     <h4 className="service-item__title">Trading Cafe</h4>
@@ -317,8 +240,8 @@ const Home = () => {
                         </div>
                         <div className="col-xl-6 col-lg-6 mt-50">
                             <div className="service-item d-flex">
-                                <div className="service-item__icon service-item__icon--2">
-                                    <img src="../assets/images/icons/s-2.png" alt="" />
+                                <div className="service-item__icon ">
+                                    <img src={premium} alt="franchise icon" style={{ width: '100px' }} />
                                 </div>
                                 <div className="service-item__content">
                                     <h4 className="service-item__title">Premium Call Outs</h4>
@@ -332,8 +255,8 @@ const Home = () => {
                         </div>
                         <div className="col-xl-6 col-lg-6 mt-50">
                             <div className="service-item d-flex">
-                                <div className="service-item__icon service-item__icon--3">
-                                    <img src="../assets/images/icons/s-3.png" alt="" />
+                                <div className="service-item__icon ">
+                                    <img src={franchise} alt="franchise icon" style={{ width: '100px' }} />
                                 </div>
                                 <div className="service-item__content">
                                     <h4 className="service-item__title">Franchise</h4>
@@ -346,14 +269,27 @@ const Home = () => {
                         </div>
                         <div className="col-xl-6 col-lg-6 mt-50">
                             <div className="service-item d-flex">
-                                <div className="service-item__icon service-item__icon--4">
-                                    <img src="../assets/images/icons/s-4.png" alt="" />
+                                <div className="service-item__icon">
+                                    <img src={medal} alt="" style={{ width: '100px' }} />
                                 </div>
                                 <div className="service-item__content">
                                     <h4 className="service-item__title"> Certified Online-Offline Batches</h4>
                                     <p>
                                         District franchise, Zonal franchise, and Mobile franchise to navigate the world of trading
                                         and investments, while benefiting from a rewarding entrepreneurial venture.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-6 col-lg-6 mt-50">
+                            <div className="service-item d-flex">
+                                <div className="service-item__icon ">
+                                    <img src={algo} alt="algo" style={{ width: '100px' }} />
+                                </div>
+                                <div className="service-item__content">
+                                    <h4 className="service-item__title">Algo Creation</h4>
+                                    <p>
+                                        Algo creation service combines technology with market insights, allowing you to automate and optimize your trading decisions. Whether you're a seasoned trader or just starting, let Market Journey elevate your trading experience.
                                     </p>
                                 </div>
                             </div>
@@ -371,7 +307,107 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <section className="feature-area pt-120">
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className="col-xl-8 text-center">
+                            <div className="section-header mb-50">
+                                {/* <h4 className="sub-heading mb-25">
+                                    <span
+                                    ><img
+                                            src="../assets/images/shape/heading-shape-1.png"
+                                            className="mr-5"
+                                            alt="" /></span
 
+                                    >Company Feature<span
+                                    ><img
+                                            src="../assets/images/shape/heading-shape-2.png"
+                                            className="ml-5"
+                                            alt=""
+                                        /></span>
+                                </h4> */}
+                                <h2 className="section-title">Awareness Program</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row mt-none-30 justify-content-center" style={{marginBottom:"100px"}}>
+                        <div className="col-xl-3 col-lg-6 col-md-6 mt-30 ">
+                            <div className="feature-item h-100">
+                                <div className="feature-item__icon feature-item__icon--1">
+                                    <img src="../assets/images/icons/f-1.png" alt="" />
+                                </div>
+                                <div className="feature-item__content">
+                                    <h4 className="feature-item__title">Monthly Awareness</h4>
+                                    <p>
+                                        Each month, we delve into different aspects of trading, from market trends and analysis to risk management strategies and emerging opportunities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
+                            <div className="feature-item h-100">
+                                <div className="feature-item__icon feature-item__icon--2">
+                                    <img src="../assets/images/icons/f-2.png" alt="" />
+                                </div>
+                                <div className="feature-item__content">
+                                    <h4 className="feature-item__title">Weekly Awareness</h4>
+                                    <p>
+                                        Every week, we offer a curated selection of insightful sessions, workshops, and discussions aimed at keeping you informed and empowered in the ever-evolving realm of trading.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
+                            <div className="feature-item h-100">
+                                <div className="feature-item__icon feature-item__icon--3">
+                                    <img src="../assets/images/icons/f-3.png" alt="" />
+                                </div>
+                                <div className="feature-item__content">
+                                    <h4 className="feature-item__title">Daily 9 AM</h4>
+                                    <p>
+                                        Daily at 9 AM for a power-packed session designed to kick start your trading day with insight and strategy.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
+                            <div className="feature-item">
+                                <div className="feature-item__icon feature-item__icon--4">
+                                    <img src="../assets/images/icons/f-4.png" alt="" />
+                                </div>
+                                <div className="feature-item__content">
+                                    <h4 className="feature-item__title">Offset Printing</h4>
+                                    <p>
+                                        Dis duis auctor an cum vel enim felis proins parturient port
+                                        nostra penas
+                                    </p>
+                                </div>
+                            </div>
+                        </div> */}
+                    </div>
+                </div>
+            </section>
+           
+            <section className="cta-area theme-bg pt-105 pb-115">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xl-8">
+                            <div className="section-header">
+                                <h2 className="section-title section-title__white">
+                                    Need Design Solution <br />For your Brand
+                                </h2>
+                            </div>
+                        </div>
+                        <div className="col-xl-4 text-right">
+                            <div className="cta-right">
+                                <p>Extra Support</p>
+                                <Link className="site-btn site-btn__s3" to="contact"
+                                ><span className="icon"><FontAwesomeIcon icon={faArrowRight} /></span>Contact us</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className="pricing-area pt-125 pb-125">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -416,9 +452,9 @@ const Home = () => {
                                 >
                             </div>
                         </div> */}
-                        <PricingItem title={'Standard'} price={'50.00'}/>
-                        <PricingItem title={'Business'} price={'60.00'}/>
-                        <PricingItem title={'Premium'} price={'70.00'}/>
+                        <PricingItem title={'Standard'} price={'50.00'} />
+                        <PricingItem title={'Business'} price={'60.00'} />
+                        <PricingItem title={'Premium'} price={'70.00'} />
                         {/* <div className="col-xl-4 col-lg-6 mt-30">
                             <div className="pricing-item">
                                 <div className="pricing-item__head">
@@ -489,16 +525,14 @@ const Home = () => {
                                     >
                                 </div>
                                 <div className="post-box__content text-center">
-                                    
+
                                     <h4 className="post-box__title">
-                                        <a href="news-details"
-                                        >Fermentum metu fringilla convallis primis</a
-                                        >
+                                        <Link to="article"
+                                        >Fermentum metu fringilla convallis primis</Link>
                                     </h4>
-                                    <a className="inline-btn" href="news-details"
+                                    <Link className="inline-btn" to="article"
                                     ><span className="icon"><FontAwesomeIcon icon={faArrowRight} /></span
-                                    >continue Reading</a
-                                    >
+                                    >continue Reading</Link>
                                 </div>
                             </article>
                         </div>
@@ -511,16 +545,14 @@ const Home = () => {
                                     >
                                 </div>
                                 <div className="post-box__content text-center">
-                                    
+
                                     <h4 className="post-box__title">
-                                        <a href="news-details"
-                                        >Fermentum metu fringilla convallis primis</a
-                                        >
+                                        <Link to="article"
+                                        >Fermentum metu fringilla convallis primis</Link>
                                     </h4>
-                                    <a className="inline-btn" href="news-details"
+                                    <Link className="inline-btn" to="article"
                                     ><span className="icon"><FontAwesomeIcon icon={faArrowRight} /></span
-                                    >continue Reading</a
-                                    >
+                                    >continue Reading</Link >
                                 </div>
                             </article>
                         </div>
@@ -533,16 +565,14 @@ const Home = () => {
                                     >
                                 </div>
                                 <div className="post-box__content text-center">
-                                    
+
                                     <h4 className="post-box__title">
-                                        <a href="news-details"
-                                        >Fermentum metu fringilla convallis primis</a
-                                        >
+                                        <Link to="article"
+                                        >Fermentum metu fringilla convallis primis</Link>
                                     </h4>
-                                    <a className="inline-btn" href="news-details"
+                                    <Link className="inline-btn" to="article"
                                     ><span className="icon"><FontAwesomeIcon icon={faArrowRight} /></span
-                                    >continue Reading</a
-                                    >
+                                    >continue Reading</Link>
                                 </div>
                             </article>
                         </div>
@@ -715,7 +745,7 @@ const Home = () => {
             </section> */}
 
 
-            
+
         </div>
 
     )
