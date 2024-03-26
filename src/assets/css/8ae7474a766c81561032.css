@@ -11350,10 +11350,11 @@ span {
 }
 .bg_img {
   background-position: 50%;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+  background-image: url('../images/bg/banner.webp');
 }
 .grey-bg {
   background: #f7f7f7 !important;
@@ -12555,6 +12556,9 @@ h6 {
   background: #fff;
   z-index: 9;
 }
+.selectedMenu{
+  color: #F7AE15;
+}
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   .header__top {
     padding: 0 40px;
@@ -12840,6 +12844,9 @@ h6 {
   display: block;
   padding: 32px 25px;
 }
+.mainmenu ul li .selectedMenu{
+   color: #F7AE15;
+}
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   .mainmenu ul li a {
     padding: 32px 20px;
@@ -12893,6 +12900,18 @@ h6 {
 @media (max-width: 991px) {
   .mainmenu ul li .sub-menu:after {
     display: none;
+  }
+  .mainmenu ul {
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.mainmenu ul li a {
+    padding: 12px 10px;
   }
 }
 .mainmenu ul li .sub-menu li a {
@@ -13006,7 +13025,7 @@ h6 {
   text-transform: uppercase;
   margin-left: auto;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 13px;
 }
 .quote-btn:hover {
   background: #0c2957;
@@ -13015,7 +13034,7 @@ h6 {
 @media (max-width: 1295px) {
   .quote-btn {
     margin-left: 15px;
-    padding: 17px 30px;
+    /* padding: 17px 30px; */
   }
 }
 @media (max-width: 990px) {
@@ -13218,7 +13237,7 @@ input.form-control-sm {
 }
 .site-btn {
   display: inline-block;
-  background: #0c2957;
+  background:#F7AE15;
   color: #fff;
   padding-right: 40px;
   font-size: 13px;
@@ -13318,7 +13337,7 @@ input.form-control-sm {
 }
 .hero__item {
   padding: 0 0 0 120px;
-  background-color: #f7ae15;
+  background-color: #00335B;
   position: relative;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
@@ -13354,19 +13373,19 @@ input.form-control-sm {
   }
 }
 .hero__content p {
-  font-size: 30px;
+  font-size: 20px;
   color: #fff;
   position: relative;
   z-index: 3;
 }
 @media (max-width: 1726px) {
   .hero__content p {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   .hero__content p {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 @media (max-width: 1199px) {
@@ -14346,20 +14365,20 @@ input.form-control-sm {
   }
 }
 .service-item__icon--1 {
-  background: #37b546;
+  background: #fff;
 }
-.service-item__icon--2 {
-  background: #fd4a36;
+/* .service-item__icon--2 {
+  background: #fff;
 }
 .service-item__icon--3 {
-  background: #ffb400;
+  background: #fff;
 }
 .service-item__icon--4 {
-  background: #0084ff;
+  background: #fff;
 }
 .service-item__icon--5 {
-  background: #0c2957;
-}
+  background: #fff;
+} */
 
 .service-item__icon--noborder {
   border-radius: 5px 0 0 5px;
@@ -17684,7 +17703,7 @@ input.form-control-sm {
 }
 .breadcrumb-section {
   position: relative;
-  background-size: auto;
+  /* background-size: auto; */
   z-index: 1;
   background-position: 100%;
 }

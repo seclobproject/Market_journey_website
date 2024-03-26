@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 // -------images ------------
-import breadcrumbBg from '../assets/images/bg/breadcrumb-bg-1.jpeg'
+import breadcrumbBg from '../assets/images/bg/banner.webp'
 import about1 from '../assets/images/about/about-bg-1.jpeg'
 import about2 from '../assets/images/about/about-bg-2.jpeg'
 import about3 from '../assets/images/about/about-bg-3.jpeg'
@@ -35,10 +35,11 @@ const About = () => {
         <div>
             <section
                 className="breadcrumb-section pt-180 pb-180 bg_img"
-                style={{ backgroundImage: `url(${breadcrumbBg})` }}
+                
                 data-overlay="dark"
                 data-opacity="3"
             >
+
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-5 d-flex">

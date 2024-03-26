@@ -1,12 +1,17 @@
 import React from 'react'
 
+import Tradcafe from '../assets/images/icons/tradingcafe.jpg'
+import franchise from '../assets/images/icons/franchise.svg'
+import medal from '../assets/images/icons/medal.svg'
+import algo from '../assets/images/icons/algo.svg'
+import premium from '../assets/images/icons/premium.svg'
 const Service = () => {
     return (
         <div>
 
             <section
                 className="breadcrumb-section pt-180 pb-180 bg_img"
-                style={{ backgroundImage: "url(images/bg/breadcrumb-bg-1.jpeg)" }}
+                // style={{ backgroundImage: "url(images/bg/breadcrumb-bg-1.jpeg)" }}
                 data-overlay="dark"
                 data-opacity="3"
             >
@@ -115,15 +120,15 @@ const Service = () => {
                         <div className="col-xl-6 col-lg-6 mt-50">
                             <div className="service-item service-item__2 d-flex">
                                 <div
-                                    className="service-item__icon service-item__icon--noborder service-item__icon--1"
+                                    className="service-item__icon service-item__icon--noborder service-item__icon--1 "
                                 >
-                                    <img src="images/icons/s-1.png" alt="" />
+                                    <img src={Tradcafe} alt="" style={{ width: '100px' }} />
                                 </div>
                                 <div className="service-item__content service-item__content--2">
-                                    <h4 className="service-item__title">Banner Printing</h4>
+                                    <h4 className="service-item__title">Trading Cafe</h4>
                                     <p>
-                                        Dise duis auctor an cume del enima felise proins parturient
-                                        port a nostra
+                                        Our Trading Cafe offers a rich tapestry of real-time discussions, expert sessions, and
+                                        live trading experiences, creating an environment that fosters growth and collaboration.
                                     </p>
                                 </div>
                             </div>
@@ -131,15 +136,15 @@ const Service = () => {
                         <div className="col-xl-6 col-lg-6 mt-50">
                             <div className="service-item service-item__2 d-flex">
                                 <div
-                                    className="service-item__icon service-item__icon--noborder service-item__icon--2"
+                                    className="service-item__icon service-item__icon--noborder service-item__icon--1 "
                                 >
-                                    <img src="images/icons/s-2.png" alt="" />
+                                    <img src={franchise} alt="" style={{ width: '100px' }} />
                                 </div>
                                 <div className="service-item__content service-item__content--2">
-                                    <h4 className="service-item__title">Poster Printing</h4>
+                                    <h4 className="service-item__title">Franchise</h4>
                                     <p>
-                                        Dise duis auctor an cume del enima felise proins parturient
-                                        port a nostra
+                                        District franchise, Zonal franchise, and Mobile franchise to navigate the world of trading
+                                        and investments, while benefiting from a rewarding entrepreneurial venture.
                                     </p>
                                 </div>
                             </div>
@@ -147,15 +152,15 @@ const Service = () => {
                         <div className="col-xl-6 col-lg-6 mt-50">
                             <div className="service-item service-item__2 d-flex">
                                 <div
-                                    className="service-item__icon service-item__icon--noborder service-item__icon--3"
+                                    className="service-item__icon service-item__icon--noborder service-item__icon--1 "
                                 >
-                                    <img src="images/icons/s-3.png" alt="" />
+                                    <img src={medal} alt="certified" style={{width:'100px'}}/>
                                 </div>
                                 <div className="service-item__content service-item__content--2">
-                                    <h4 className="service-item__title">Flyer Printing</h4>
+                                    <h4 className="service-item__title"> Certified Online-Offline Batches</h4>
                                     <p>
-                                        Dise duis auctor an cume del enima felise proins parturient
-                                        port a nostra
+                                        District franchise, Zonal franchise, and Mobile franchise to navigate the world of trading
+                                        and investments, while benefiting from a rewarding entrepreneurial venture.
                                     </p>
                                 </div>
                             </div>
@@ -163,15 +168,31 @@ const Service = () => {
                         <div className="col-xl-6 col-lg-6 mt-50">
                             <div className="service-item service-item__2 d-flex">
                                 <div
-                                    className="service-item__icon service-item__icon--noborder service-item__icon--4"
+                                    className="service-item__icon service-item__icon--noborder service-item__icon--1 "
                                 >
-                                    <img src="images/icons/s-4.png" alt="" />
+                                    <img src={algo} alt="algo" style={{ width: '100px' }} />
                                 </div>
                                 <div className="service-item__content service-item__content--2">
-                                    <h4 className="service-item__title">Business Card</h4>
+                                    <h4 className="service-item__title">Algo Creation</h4>
                                     <p>
-                                        Dise duis auctor an cume del enima felise proins parturient
-                                        port a nostra
+                                        Algo creation service combines technology with market insights, allowing you to automate and optimize your trading decisions. Whether you're a seasoned trader or just starting, let Market Journey elevate your trading experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-6 col-lg-6 mt-50">
+                            <div className="service-item service-item__2 d-flex">
+                                <div
+                                    className="service-item__icon service-item__icon--noborder service-item__icon--1 "
+                                >
+                                    <img src={premium} alt="premium" style={{ width: '100px' }} />
+                                </div>
+                                <div className="service-item__content service-item__content--2">
+                                    <h4 className="service-item__title">Premium Call Outs</h4>
+                                    <p>
+                                        Our Premium Call Outs service provides you with helping you make informed decisions
+                                        and capitalize on market opportunities. Elevate your trading experience with the
+                                        precision and expertise offered by Market Journey.
                                     </p>
                                 </div>
                             </div>

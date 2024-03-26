@@ -6,7 +6,7 @@ import PricingItem from '../Components/PricingItem';
 
 //------ images -------
 import hero_shape from '../assets/images/shape/hero-shape.png'
-import hero_banner from '../assets/images/banner/trad.jpg'
+import hero_banner from '../assets/images/banner/trad.webp'
 import aboutbg1 from '../assets/images/bg/about-bg-1.png'
 import article1 from '../assets/images/news/news-1.jpeg'
 import article2 from '../assets/images/news/news-2.jpeg'
@@ -16,7 +16,9 @@ import franchise from '../assets/images/icons/franchise.svg'
 import medal from '../assets/images/icons/medal.svg'
 import algo from '../assets/images/icons/algo.svg'
 import premium from '../assets/images/icons/premium.svg'
-
+import monthly from '../assets/images/icons/monthly.svg'
+import weekly from '../assets/images/icons/weekly.svg'
+import day from '../assets/images/icons/day.svg'
 
 const Home = () => {
     return (
@@ -79,7 +81,8 @@ const Home = () => {
                                                     data-delay=".5s"
                                                     data-duration=".7s"
                                                 >
-                                                    Discover the Flavor of Trade
+                                                    Discover the Flavor of Trade, India’s first largest company and Kerala's first trading Cafe
+                                                    Network.
                                                 </p>
                                                 <Link
                                                     data-animation="fadeInUp"
@@ -333,8 +336,8 @@ const Home = () => {
                     <div className="row mt-none-30 justify-content-center" style={{marginBottom:"100px"}}>
                         <div className="col-xl-3 col-lg-6 col-md-6 mt-30 ">
                             <div className="feature-item h-100">
-                                <div className="feature-item__icon feature-item__icon--1">
-                                    <img src="../assets/images/icons/f-1.png" alt="" />
+                                <div className="feature-item__icon">
+                                    <img src={monthly} alt="" />
                                 </div>
                                 <div className="feature-item__content">
                                     <h4 className="feature-item__title">Monthly Awareness</h4>
@@ -346,8 +349,8 @@ const Home = () => {
                         </div>
                         <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
                             <div className="feature-item h-100">
-                                <div className="feature-item__icon feature-item__icon--2">
-                                    <img src="../assets/images/icons/f-2.png" alt="" />
+                                <div className="feature-item__icon ">
+                                    <img src={weekly} alt="" />
                                 </div>
                                 <div className="feature-item__content">
                                     <h4 className="feature-item__title">Weekly Awareness</h4>
@@ -359,8 +362,8 @@ const Home = () => {
                         </div>
                         <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
                             <div className="feature-item h-100">
-                                <div className="feature-item__icon feature-item__icon--3">
-                                    <img src="../assets/images/icons/f-3.png" alt="" />
+                                <div className="feature-item__icon ">
+                                    <img src={day} alt="" />
                                 </div>
                                 <div className="feature-item__content">
                                     <h4 className="feature-item__title">Daily 9 AM</h4>
@@ -388,7 +391,7 @@ const Home = () => {
                 </div>
             </section>
            
-            <section className="cta-area theme-bg pt-105 pb-115">
+            <section className="cta-area theme-bg pt-90 pb-95">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-8">

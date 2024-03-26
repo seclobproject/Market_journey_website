@@ -3,13 +3,23 @@ import logo from '../assets/images/logo/logo.png'
 import { Link } from 'react-router-dom'
 const Header = () => {
     const [toggleHeader,setToggleHeader]=useState(false)
+    // const [selectedItem, setSelectedItem] = useState(null);
+
     const scrollTop = () => {
         window.scrollTo({ top: 0 });
         setToggleHeader(false)
     }
-    console.log('====================================');
-    console.log(toggleHeader);
-    console.log('====================================');
+    // const handleItemClick = (index) => {
+    //     setSelectedItem(index);
+    // };
+
+    const menuItems = [
+        { label: 'Home', link: '/' },
+        { label: 'About', link: '/about' },
+        { label: 'Services', link: '/service' },
+        { label: 'Blogs', link: '/article' },
+        { label: 'Contact', link: '/contact' },
+    ];
     return (
         <header className="header">
             <div className="header__bottom">
@@ -24,16 +34,19 @@ const Header = () => {
 
                                     <nav id="mobile-menu">
                                         <ul>
-                                            <li onClick={scrollTop} className="menu_has_children">
-                                                <Link to="/">Home</Link>
-
-                                            </li>
-                                            <li onClick={scrollTop}><Link to="/about">About</Link></li>
-
-                                            <li onClick={scrollTop}><Link to="service">Services</Link></li>
-                                            <li onClick={scrollTop}><Link to="article">Blogs</Link></li>
-
-                                            <li onClick={scrollTop}><Link to="contact">Contact</Link></li>
+                                            {menuItems.map((item, index) => (
+                                                <li
+                                                    key={index}
+                                                    onClick={() => {
+                                                        handleItemClick(index);
+                                                        scrollTop();
+                                                    }}
+                                                   
+                                                >
+                                                    <Link to={item.link}>{item.label}</Link>
+                                                    {/* <Link className={selectedItem === index ? 'selectedMenu' : ''} to={item.link}>{item.label}</Link> */}
+                                                </li>
+                                            ))}
                                         </ul>
                                     </nav>
                                 </div>

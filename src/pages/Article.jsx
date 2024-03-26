@@ -16,7 +16,7 @@ const Article = () => {
     <div>
           <section
               className="breadcrumb-section pt-180 pb-180 bg_img"
-              style={{ background: 'url(images/bg/breadcrumb-bg-1.jpeg)' }}
+            //   style={{ background: 'url(images/bg/breadcrumb-bg-1.jpeg)' }}
               data-overlay="dark"
               data-opacity="3"
           >

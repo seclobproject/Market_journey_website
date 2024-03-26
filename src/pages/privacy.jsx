@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
         <div>
             <section
                 className="breadcrumb-section pt-180 pb-180 bg_img"
-                style={{ backgroundImage: url(`${breadcrumbbg}`)}}
+                // style={{ backgroundImage: url(`${breadcrumbbg}`)}}
                 data-overlay="dark"
                 data-opacity="3"
             >

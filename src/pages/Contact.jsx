@@ -41,7 +41,7 @@ const Contact = () => {
         <div>
             <section
                 className="breadcrumb-section pt-180 pb-180 bg_img"
-                style={{ backgroundImage: `url(${breadcrumbbg1})`}}
+                // style={{ backgroundImage: `url(${breadcrumbbg1})`}}
                 data-overlay="dark"
                 data-opacity="3"
             >
