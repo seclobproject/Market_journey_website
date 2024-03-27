@@ -21,6 +21,9 @@ import weekly from '../assets/images/icons/weekly.svg'
 import day from '../assets/images/icons/day.svg'
 
 const Home = () => {
+    const scrollTop = () => {
+        window.scrollTo({ top: 0 });
+    }
     return (
 
         <div id="__next">
@@ -303,7 +306,7 @@ const Home = () => {
                             <div className="view-all mt-55">
                                 <p>
                                     We help take your small business to the next level.
-                                    <a href="service">All Services</a>
+                                    <Link onClick={scrollTop} to="service">All Services</Link>
                                 </p>
                             </div>
                         </div>
@@ -397,7 +400,7 @@ const Home = () => {
                         <div className="col-xl-8">
                             <div className="section-header">
                                 <h2 className="section-title section-title__white">
-                                    Need Design Solution <br />For your Brand
+                                    We Love To Hear <br />From You
                                 </h2>
                             </div>
                         </div>

@@ -5,7 +5,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 // -------images ------------
-import breadcrumbBg from '../assets/images/bg/banner.webp'
 import about1 from '../assets/images/about/about-bg-1.jpeg'
 import about2 from '../assets/images/about/about-bg-2.jpeg'
 import about3 from '../assets/images/about/about-bg-3.jpeg'
@@ -88,14 +87,11 @@ const About = () => {
                                         /></span>
                                 </h4>
                                 <h2 className="section-title section-title__2 mb-30">
-                                    From Structure to Conveyance
+                                    Learn, Share, And Grow
                                 </h2>
                                 <p>
-                                    Libero aliquam eiget rhoncus elit quis mattis tos neque ullco
-                                    qua praesent interdum orce torristique aenean at dictumst
-                                    velit fames molestie tristique magna sociosqu iner rhoncuis in
-                                    cubilia here are some best and catchy dolor for printing
-                                    company
+                                    Experience the transformative potential of learning together, sharing experiences,
+                                    and growing your trading skills at Trading Cafe.
                                 </p>
                             </div>
                             <div className="row mt-none-40">
@@ -146,7 +142,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-            <div className="video-area video-area__2">
+            {/* <div className="video-area video-area__2">
                 <div className="container">
                     <div className="row no-gutters">
                         <div className="col-xl-12">
@@ -182,9 +178,9 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="counter-area pb-30 grey-bg">
-                {/* <div className="container">
+            </div> */}
+            {/* <div className="counter-area pb-30 grey-bg">
+                 <div className="container">
                   <div className="row mt-none-40">
                       <div className="col-xl-3 col-lg-6 col-md-6 mt-40">
                           <div className="counter-box counter-box__2 text-center">
@@ -231,8 +227,8 @@ const About = () => {
                           </div>
                       </div>
                   </div>
-              </div> */}
-            </div>
+              </div> 
+            </div> */}
             <section className="wcu-area wcu-area__2 pt-125 pb-125">
                 <div className="container">
                     <div className="row justify-content-between">

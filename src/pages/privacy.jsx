@@ -1,5 +1,5 @@
 import React from 'react'
-import breadcrumbbg from '../assets/images/bg/breadcrumb-bg-1.jpeg'
+import { Link } from 'react-router-dom'
 const PrivacyPolicy = () => {
     return (
         <div>
@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
                             <div className="breadcrumb-text">
                                 <h2 className="breadcrumb-text__title">Privacy policy</h2>
                                 <ul className="breadcrumb-text__nav">
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><Link to="/">Home</Link></li>
                                     <li>-</li>
                                     <li>Privacy policy</li>
                                 </ul>

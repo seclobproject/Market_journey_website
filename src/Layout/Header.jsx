@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import logo from '../assets/images/logo/logo.png'
 import { Link } from 'react-router-dom'
 const Header = () => {
-    const [toggleHeader,setToggleHeader]=useState(false)
+    const [toggleHeader, setToggleHeader] = useState(false)
     // const [selectedItem, setSelectedItem] = useState(null);
 
     const scrollTop = () => {
@@ -11,6 +11,7 @@ const Header = () => {
     }
     // const handleItemClick = (index) => {
     //     setSelectedItem(index);
+    //     scrollTop();
     // };
 
     const menuItems = [
@@ -37,11 +38,10 @@ const Header = () => {
                                             {menuItems.map((item, index) => (
                                                 <li
                                                     key={index}
-                                                    onClick={() => {
-                                                        handleItemClick(index);
-                                                        scrollTop();
-                                                    }}
-                                                   
+                                                    onClick={
+                                                        scrollTop
+                                                    }
+
                                                 >
                                                     <Link to={item.link}>{item.label}</Link>
                                                     {/* <Link className={selectedItem === index ? 'selectedMenu' : ''} to={item.link}>{item.label}</Link> */}
@@ -50,24 +50,24 @@ const Header = () => {
                                         </ul>
                                     </nav>
                                 </div>
-                                <Link className="quote-btn" to="contact">Login</Link>
+                                {/* <Link className="quote-btn" to="contact">Login</Link> */}
 
                                 <div className={`mobile-menu mean-container d-lg-none`}>
                                     <div className="mean-bar">
-                                        <a onClick={() => setToggleHeader(true)} className={`meanmenu-reveal ${toggleHeader? 'd-none': 'd-block'}`}
-                                        ><span></span><span></span><span></span></a><a 
-                                            onClick={()=>setToggleHeader(false)}
-                                        
-                                            className={` ${toggleHeader ? 'd-block': 'd-none'} `}
+                                        <a onClick={() => setToggleHeader(true)} className={`meanmenu-reveal ${toggleHeader ? 'd-none' : 'd-block'}`}
+                                        ><span></span><span></span><span></span></a><a
+                                            onClick={() => setToggleHeader(false)}
+
+                                            className={` ${toggleHeader ? 'd-block' : 'd-none'} `}
                                             style={{
-                                                position:'absolute',
-                                                top:10,
+                                                position: 'absolute',
+                                                top: 10,
                                                 right: 10,
                                                 left: 'auto',
                                                 textAlign: 'center',
                                                 textIndent: 0,
                                                 fontSize: 18,
-                                                color:'#f7ae15'
+                                                color: '#f7ae15'
                                             }}
                                         >X</a>
                                     </div>

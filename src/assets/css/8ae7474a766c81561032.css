@@ -12756,7 +12756,7 @@ h6 {
   display: -moz-box;
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-between;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-align-items: center;

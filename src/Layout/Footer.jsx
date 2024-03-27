@@ -64,10 +64,10 @@ const Footer = () => {
                                     <Link to="/article"
                                     ><FontAwesomeIcon icon={faAngleRight} /> Article</Link>
                                 </li>
-                                <li onClick={scrollTop}>
+                                {/* <li onClick={scrollTop}>
                                     <Link to="/contact"
                                     ><FontAwesomeIcon icon={faAngleRight} />Contact</Link>
-                                </li>
+                                </li> */}
                             </ul>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ const Footer = () => {
                             <h4 className="widget-title">Get Help</h4>
                             <div className="recent-news mt-none-20">
                                 <div className="recent-news__content mt-20">
-                                    <Link className="recent-news__title" to="/contact"
+                                    <Link onClick={scrollTop} className="recent-news__title" to="/contact"
                                     >Contact Us</Link>
                                     {/* <a className="recent-news__date" href="news-details"
                                   >Sep 20. 2020</a
@@ -129,9 +129,8 @@ const Footer = () => {
                             <div className="copyright-text">
                                 <p>
                                     Copyright ©
-                                    <a href="/"
-                                    >Market journey</a
-                                    >
+                                    <Link onClick={scrollTop} to="/"
+                                    >Market journey</Link>
                                     All Rights Reserved.
                                 </p>
                             </div>

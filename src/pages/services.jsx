@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 import Tradcafe from '../assets/images/icons/tradingcafe.jpg'
 import franchise from '../assets/images/icons/franchise.svg'
 import medal from '../assets/images/icons/medal.svg'
@@ -21,7 +21,7 @@ const Service = () => {
                             <div className="breadcrumb-text">
                                 <h2 className="breadcrumb-text__title">our service</h2>
                                 <ul className="breadcrumb-text__nav">
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><Link to="/">Home</Link></li>
                                     <li>-</li>
                                     <li>services</li>
                                 </ul>

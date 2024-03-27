@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import newDetails from '../assets/images/news/news-details-1.jpeg'
 import quoteIcon from '../assets/images/icons/quote-icon.png'
 import newsInner1 from '../assets/images/news/news-inner-1.jpeg'
@@ -26,8 +27,7 @@ const Article = () => {
                           <div className="breadcrumb-text">
                               <h2 className="breadcrumb-text__title">Article Details</h2>
                               <ul className="breadcrumb-text__nav">
-                                  <li><a href="index.html">Home</a></li>
-                                  <li>-</li>
+                                  <li><Link to="/">Home</Link></li>
                                   <li>Article Details</li>
                               </ul>
                           </div>

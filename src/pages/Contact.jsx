@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import breadcrumbbg1 from '../assets/images/bg/breadcrumb-bg-1.jpeg'
 import contactIllustation from '../assets/images/bg/contactillu.webp'
 const Contact = () => {
     const [mail,setMail]=useState({})
@@ -51,7 +51,7 @@ const Contact = () => {
                             <div className="breadcrumb-text">
                                 <h2 className="breadcrumb-text__title">contact us</h2>
                                 <ul className="breadcrumb-text__nav">
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><Link to="/">Home</Link></li>
                                     <li>-</li>
                                     <li>contact us</li>
                                 </ul>
