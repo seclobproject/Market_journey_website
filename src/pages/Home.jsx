@@ -506,7 +506,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="news-area grey-bg pt-120 pb-120">
+            {/* <section className="news-area grey-bg pt-120 pb-120">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-7">
@@ -584,7 +584,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* <section className="cta-area theme-bg pt-105 pb-115">
                 <div className="container">
                     <div className="row">

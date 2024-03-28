@@ -76,7 +76,7 @@ const About = () => {
                             </div>
                         </div>
                         <div className="col-xl-6">
-                            <div className="section-header section-header__2 mb-40">
+                            <div className="section-header section-header__2 mb-20">
                                 <h4 className="sub-heading sub-heading__2 mb-10">
                                     About Us
                                     <span
@@ -94,37 +94,37 @@ const About = () => {
                                     and growing your trading skills at Trading Cafe.
                                 </p>
                             </div>
-                            <div className="row mt-none-40">
-                                <div className="col-xl-6 mt-40">
-                                    <div className="ab__box">
+                            <div className="">
+                                <div className="col-xl-10 mt-30">
+                                    <div className="ab__box row">
                                         <div className="ab__box--head">
                                             <div className="icon">
                                                 <img src="images/icons/ab-1.png" alt="" />
                                             </div>
-                                            <h4 className="title">Get the <br />Most Definitely</h4>
+                                            <h4 className="title">India’s first <br />largest trading company</h4>
                                         </div>
                                         <p>
-                                            Pulvinar primis to velit dolo sociise aptent varius acuise
-                                            maner platea dames pura suspen
+                                            Renowned for expansive network and unwavering commitment to quality and
+                                            integrity, this company has set industry standards and redefined the art of trade.
                                         </p>
                                     </div>
                                 </div>
-                                <div className="col-xl-6 mt-40">
+                                <div className="col-xl-10 mt-30">
                                     <div className="ab__box">
                                         <div className="ab__box--head">
                                             <div className="icon icon__2">
                                                 <img src="images/icons/ab-2.png" alt="" />
                                             </div>
-                                            <h4 className="title">Fast and <br />quality service</h4>
+                                            <h4 className="title">Kerala’s first<br /> trading cafe network </h4>
                                         </div>
                                         <p>
-                                            Pulvinar primis to velit dolo sociise aptent varius acuise
-                                            maner platea dames pura suspen
+                                            The essence of a traditional cafe with the dynamic world of trading, it offers a
+                                            unique platform for individuals.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div className="ab-author-signature mt-55">
+                            {/* <div className="ab-author-signature mt-55">
                                 <div className="author__box">
                                     <div className="author__box--thumb">
                                         <img src="images/other/author-2.png" alt="" />
@@ -137,7 +137,7 @@ const About = () => {
                                 <div className="signature">
                                     <img src="images/shape/signature.png" alt="" />
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -179,8 +179,8 @@ const About = () => {
                     </div>
                 </div>
             </div> */}
-            {/* <div className="counter-area pb-30 grey-bg">
-                 <div className="container">
+            {/* <div className="counter-area pb-30 grey-bg"> */}
+            <div className="container grey-bg pb-80">
                   <div className="row mt-none-40">
                       <div className="col-xl-3 col-lg-6 col-md-6 mt-40">
                           <div className="counter-box counter-box__2 text-center">
@@ -188,7 +188,7 @@ const About = () => {
                                   <img src="images/icons/c-1.png" alt="" />
                               </div>
                               <h2 className="counter_box__title">
-                                  <span className="odometer"><span>count</span></span>
+                                  <span className="odometer"><span>55</span></span>
                               </h2>
                               <p>Complete Work</p>
                           </div>
@@ -199,7 +199,7 @@ const About = () => {
                                   <img src="images/icons/c-2.png" alt="" />
                               </div>
                               <h2 className="counter_box__title">
-                                  <span className="odometer"><span>count</span></span>
+                                  <span className="odometer"><span>545</span></span>
                               </h2>
                               <p>Expert Member</p>
                           </div>
@@ -210,7 +210,7 @@ const About = () => {
                                   <img src="images/icons/c-3.png" alt="" />
                               </div>
                               <h2 className="counter_box__title">
-                                  <span className="odometer"><span>count</span></span>
+                                  <span className="odometer"><span>45</span></span>
                               </h2>
                               <p>Satisfied Client</p>
                           </div>
@@ -221,14 +221,14 @@ const About = () => {
                                   <img src="images/icons/c-4.png" alt="" />
                               </div>
                               <h2 className="counter_box__title">
-                                  <span className="odometer"><span>count</span></span>
+                                  <span className="odometer"><span>45</span></span>
                               </h2>
                               <p>Total Coffees</p>
                           </div>
                       </div>
                   </div>
               </div> 
-            </div> */}
+            {/* </div> */}
             <section className="wcu-area wcu-area__2 pt-125 pb-125">
                 <div className="container">
                     <div className="row justify-content-between">
@@ -252,12 +252,11 @@ const About = () => {
                                         /></span>
                                 </h4>
                                 <h2 className="section-title section-title__2 mb-30">
-                                    Print mindfully Green Printing
+                                    SHAPING THE FUTURE OF TRADE
                                 </h2>
                                 <p>
-                                    Libero aliquam eiget rhoncus elit quis mattis tos neque ullco
-                                    qua prae sent interdum orce torristique aenean at dictumst
-                                    velit fames molestie tristique mage sociosqu rhoncu cubilia
+                                    Trade ensures resilience, efficiency, and inclusivity, paving the way for a more
+                                    interconnected and sustainable global economy.
                                 </p>
                             </div>
                             <div className="wcu-box__wrapper wcu-box__wrapper--2">
@@ -267,11 +266,11 @@ const About = () => {
                                     </div>
                                     <div className="wcu-box__content wcu-box__content--2">
                                         <h4 className="wcu-box__title wcu-box__title--2">
-                                            Satisfied Service
+                                            Awareness program
                                         </h4>
                                         <p>
-                                            Pulvinar primis to velit dolo sociise apten acuise maner
-                                            platea one more dames pura tole suspen
+                                            Monthly awareness, Weekly awareness and Daily awareness program for a perfect
+                                            trading.
                                         </p>
                                     </div>
                                 </div>
@@ -283,11 +282,10 @@ const About = () => {
                                     </div>
                                     <div className="wcu-box__content wcu-box__content--2">
                                         <h4 className="wcu-box__title wcu-box__title--2">
-                                            Free Consultancy
+                                            Awards and rewards
                                         </h4>
                                         <p>
-                                            Pulvinar primis to velit dolo sociise apten acuise maner
-                                            platea one more dames pura tole suspen
+                                            We’re allocating 10% of our total profit for special awards and rewards.
                                         </p>
                                     </div>
                                 </div>
@@ -413,7 +411,7 @@ const About = () => {
                 </div>
 
             </div> */}
-            <div
+            {/* <div
                 className="testimonial-area testimonial-area__2 testimonial-area__3 pt-30 pb-50"
             >
             <div className="container">
@@ -520,7 +518,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            </div>
+            </div> */}
         </div>
     )
 }

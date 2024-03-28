@@ -60,10 +60,10 @@ const Footer = () => {
                                     <Link to="/service"
                                     ><FontAwesomeIcon icon={faAngleRight} /> Service</Link>
                                 </li>
-                                <li onClick={scrollTop}>
+                                {/* <li onClick={scrollTop}>
                                     <Link to="/article"
                                     ><FontAwesomeIcon icon={faAngleRight} /> Article</Link>
-                                </li>
+                                </li> */}
                                 {/* <li onClick={scrollTop}>
                                     <Link to="/contact"
                                     ><FontAwesomeIcon icon={faAngleRight} />Contact</Link>

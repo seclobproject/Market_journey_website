@@ -14067,7 +14067,7 @@ input.form-control-sm {
   -moz-box-flex: 0;
   flex: 0 0 70px;
   -ms-flex: 0 0 70px;
-  max-width: 70px;
+  /* max-width: 70px; */
   -webkit-justify-content: center;
   -moz-box-pack: center;
   justify-content: center;
