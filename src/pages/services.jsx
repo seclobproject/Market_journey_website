@@ -157,10 +157,9 @@ const Service = () => {
                                     <img src={medal} alt="certified" style={{width:'100px'}}/>
                                 </div>
                                 <div className="service-item__content service-item__content--2">
-                                    <h4 className="service-item__title"> Certified Online-Offline Batches</h4>
+                                    <h4 className="service-item__title"> Certified Online-Offline Batches </h4>
                                     <p>
-                                        District franchise, Zonal franchise, and Mobile franchise to navigate the world of trading
-                                        and investments, while benefiting from a rewarding entrepreneurial venture.
+                                        Market journey provides online trading courses on the art of financial markets. Teaches effective trading strategies, and gain the confidence to navigate the online trading landscape.
                                     </p>
                                 </div>
                             </div>
