@@ -10,14 +10,13 @@ const PricingItem = ({title,price,itemList}) => {
                   <h2 className="heading-title">{title}</h2>
                   <h4 className="sub-heading-title">Regular Price</h4>
               </div>
-              <div className="pricing-item__price"><h2>${price}</h2></div>
+              <div className="pricing-item__price"><h2>₹{price}</h2></div>
               <ul className="pricing-item__lists">
-                  <li>Living aboves saying</li>
-                  <li>Evening a gather</li>
-                  <li>Waters move replenish</li>
-                  <li>Lesser land replenis</li>
-                  <li>Bear morn divide divided</li>
-                  <li>Under beginning</li>
+                  <li>Direct Mobile franchise : </li>
+                  <li>Direct Zonal franchise :</li>
+                  <li>Mobile franchise bonus :</li>
+                  <li>Total customer earnings :</li>
+                  <li>Product purchasing bonus :</li>
               </ul>
               <a className="price-btn" href="pricing"
               ><span className="icon"><FontAwesomeIcon icon={faArrowRight} /></span

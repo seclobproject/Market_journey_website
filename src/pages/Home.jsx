@@ -336,7 +336,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row mt-none-30 justify-content-center" style={{marginBottom:"100px"}}>
+                    <div className="row mt-none-30 justify-content-center" style={{ marginBottom: "100px" }}>
                         <div className="col-xl-3 col-lg-6 col-md-6 mt-30 ">
                             <div className="feature-item h-100">
                                 <div className="feature-item__icon">
@@ -393,7 +393,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-           
+
             <section className="cta-area theme-bg pt-90 pb-95">
                 <div className="container">
                     <div className="row">
@@ -458,9 +458,25 @@ const Home = () => {
                                 >
                             </div>
                         </div> */}
-                        <PricingItem title={'Standard'} price={'50.00'} />
-                        <PricingItem title={'Business'} price={'60.00'} />
-                        <PricingItem title={'Premium'} price={'70.00'} />
+                        <PricingItem title={'District Franchise'} price={'100000'} benifits={[{
+                            text: "Direct Mobile franchise",
+                            key: "20%"
+                        },
+                            { text: "Direct Zonal franchise", key: "10%" },
+                            { text: " Mobile franchise bonus", key: "8%" },
+                            { text: " Total customer earnings", key: "5%" },
+                            { text: " Product purchasing bonus", key: "4%" },
+                        ]} />
+                        <PricingItem title={'Zonal Franchise'} price={'80000'} benifits={[{
+                            text: "Direct Mobile franchise",
+                            key: "20%"
+                        },
+                        { text: "Direct District franchise", key: "10%" },
+                        { text: " Mobile franchise referral", key: "12%" },
+                        { text: " Total customer earnings", key: "8%" },
+                        { text: " Product purchasing bonus", key: "6%" },
+                        ]} />
+                        <PricingItem title={'Mobile Franchise'} price={'5000'} />
                         {/* <div className="col-xl-4 col-lg-6 mt-30">
                             <div className="pricing-item">
                                 <div className="pricing-item__head">
