@@ -11356,6 +11356,14 @@ span {
   height: 100%;
   background-image: url('../images/bg/banner.webp');
 }
+.bg_service_img{
+    background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/bg/banner2.webp');
+}
 .grey-bg {
   background: #f7f7f7 !important;
 }

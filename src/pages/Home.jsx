@@ -476,7 +476,15 @@ const Home = () => {
                         { text: " Total customer earnings", key: "8%" },
                         { text: " Product purchasing bonus", key: "6%" },
                         ]} />
-                        <PricingItem title={'Mobile Franchise'} price={'5000'} />
+                        <PricingItem title={'Mobile Franchise'} price={'5000'} benifits={[{
+                            text: "Direct Mobile franchise",
+                            key: "20%"
+                        },
+                        { text: "Direct product referal", key: "10%" },
+                        { text: " District/Zonal franchise", key: "10%" },
+                        { text: " Brokerage", key: "8%" },
+                        { text: " Product purchasing bonus", key: "6%" },
+                        ]} />
                         {/* <div className="col-xl-4 col-lg-6 mt-30">
                             <div className="pricing-item">
                                 <div className="pricing-item__head">

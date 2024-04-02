@@ -5,12 +5,13 @@ import franchise from '../assets/images/icons/franchise.svg'
 import medal from '../assets/images/icons/medal.svg'
 import algo from '../assets/images/icons/algo.svg'
 import premium from '../assets/images/icons/premium.svg'
+import about1 from '../assets/images/bg/about1.webp'
 const Service = () => {
     return (
         <div>
 
             <section
-                className="breadcrumb-section pt-180 pb-180 bg_img"
+                className="breadcrumb-section pt-180 pb-180 bg_service_img"
                 // style={{ backgroundImage: "url(images/bg/breadcrumb-bg-1.jpeg)" }}
                 data-overlay="dark"
                 data-opacity="3"
@@ -187,9 +188,9 @@ const Service = () => {
                                     <img src={premium} alt="premium" style={{ width: '100px' }} />
                                 </div>
                                 <div className="service-item__content service-item__content--2">
-                                    <h4 className="service-item__title">Premium Call Outs</h4>
+                                    <h4 className="service-item__title">Premium Course Outs</h4>
                                     <p>
-                                        Our Premium Call Outs service provides you with helping you make informed decisions
+                                        Our Premium Course Outs service provides you with helping you make informed decisions
                                         and capitalize on market opportunities. Elevate your trading experience with the
                                         precision and expertise offered by Market Journey.
                                     </p>
@@ -220,21 +221,20 @@ const Service = () => {
                                             alt=""
                                         /></span>
                                 </h4>
-                                <h2 className="section-title section-title__2">How it works</h2>
+                                <h2 className="section-title section-title__2">AMC – Abdulla Money Concept</h2>
                             </div>
                         </div>
                     </div>
                     <div className="row mt-none-40">
                         <div className="col-xl-3 col-lg-6 col-md-6 mt-40">
                             <div className="wp-box">
-                                <div className="wp-box__icon wp-box__icon--1 mb-35">
+                                {/* <div className="wp-box__icon wp-box__icon--1 mb-35">
                                     <img src="images/icons/w-p-1.png" alt="" />
-                                </div>
+                                </div> */}
                                 <div className="wp-box__content">
-                                    <h4 className="wp-box__title">Booking Online</h4>
+                                    <h4 className="wp-box__title">C30</h4>
                                     <p>
-                                        God They moving an firmament seed over herb gathering multis
-                                        ply morning fruitful
+                                        Up to 30% can be trade
                                     </p>
                                 </div>
                             </div>
@@ -242,27 +242,25 @@ const Service = () => {
                         <div className="col-xl-3 col-lg-6 col-md-6 mt-40">
                             <div className="wp-box reverse-col">
                                 <div className="wp-box__content">
-                                    <h4 className="wp-box__title">Received Work</h4>
+                                    <h4 className="wp-box__title">L-T</h4>
                                     <p>
-                                        God They moving an firmament seed over herb gathering multis
-                                        ply morning fruitful
+                                        Limited trade
                                     </p>
                                 </div>
-                                <div className="wp-box__icon wp-box__icon--2 mt-35">
+                                {/* <div className="wp-box__icon wp-box__icon--2 mt-35">
                                     <img src="images/icons/w-p-2.png" alt="" />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-6 col-md-6 mt-40">
                             <div className="wp-box">
-                                <div className="wp-box__icon wp-box__icon--3 mb-35">
+                                {/* <div className="wp-box__icon wp-box__icon--3 mb-35">
                                     <img src="images/icons/w-p-3.png" alt="" />
-                                </div>
+                                </div> */}
                                 <div className="wp-box__content">
-                                    <h4 className="wp-box__title">Satisfied Design</h4>
+                                    <h4 className="wp-box__title">Q-T</h4>
                                     <p>
-                                        God They moving an firmament seed over herb gathering multis
-                                        ply morning fruitful
+                                        Quantity trade
                                     </p>
                                 </div>
                             </div>
@@ -270,15 +268,40 @@ const Service = () => {
                         <div className="col-xl-3 col-lg-6 col-md-6 mt-40">
                             <div className="wp-box reverse-col">
                                 <div className="wp-box__content">
-                                    <h4 className="wp-box__title">Start Printing</h4>
+                                    <h4 className="wp-box__title">S-T</h4>
                                     <p>
-                                        God They moving an firmament seed over herb gathering multis
-                                        ply morning fruitful
+                                        Stop loss and target
                                     </p>
                                 </div>
-                                <div className="wp-box__icon mt-35">
+                                {/* <div className="wp-box__icon mt-35">
                                     <img src="images/icons/w-p-4.png" alt="" />
+                                </div> */}
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-lg-6 col-md-6 mt-40">
+                            <div className="wp-box reverse-col">
+                                <div className="wp-box__content">
+                                    <h4 className="wp-box__title">N-A</h4>
+                                    <p>
+                                        Not an Average 
+                                    </p>
                                 </div>
+                                {/* <div className="wp-box__icon mt-35">
+                                    <img src="images/icons/w-p-4.png" alt="" />
+                                </div> */}
+                            </div>
+                        </div>
+                        <div className="col-xl-3 col-lg-6 col-md-6 mt-40">
+                            <div className="wp-box reverse-col">
+                                <div className="wp-box__content">
+                                    <h4 className="wp-box__title">SS</h4>
+                                    <p>
+                                        50 Formula
+                                    </p>
+                                </div>
+                                {/* <div className="wp-box__icon mt-35">
+                                    <img src="images/icons/w-p-4.png" alt="" />
+                                </div> */}
                             </div>
                         </div>
                     </div>
@@ -294,7 +317,7 @@ const Service = () => {
                                 data-tilt="true"
                                 data-tilt-perspective="3000"
                             >
-                                <img src="images/bg/strategy-bg-1.png" alt="" />
+                                <img src={about1} alt="serviceImg" />
                             </div>
                         </div>
                         <div className="col-xl-6 pl-60">
@@ -308,28 +331,27 @@ const Service = () => {
                                         /></span>
                                 </h4>
                                 <h2 className="section-title section-title__2 mb-30">
-                                    Energy quality Commitment
+                                    TRADE WITH CONFIDENCE
                                 </h2>
                                 <p>
-                                    Libero aliquam eiget rhoncus elit quis mattis tose neque ullco
-                                    quality praesent interdum orce torristique aenean atest
-                                    dictumst velit fames molestie tristique magna sociosqu
+                                    Embodies our trading company's strategy, prioritizing integrity, reliability, and
+                                    expertise.
                                 </p>
                             </div>
                             <div className="skill-boxs mt-none-35">
                                 <div className="skill-item mb-35">
-                                    <div className="bar-title"><h4>Digital print</h4></div>
-                                    <div className="progress">
+                                    <div className="bar-title"><h4>DISTRICT FRANCHISE</h4></div>
+                                    {/* <div className="progress">
                                         <div
                                             className="progress-bar progress-bar__1 wow slideInLeft"
                                             role="progressbar"
-                    //                         style="
-                    //     width: 90%;
-                    //     visibility: visible;
-                    //     animation-duration: 1s;
-                    //     animation-delay: 0.5s;
-                    //     animation-name: slideInLeft;
-                    //   "
+                                            style="
+                        width: 90%;
+                        visibility: visible;
+                        animation-duration: 1s;
+                        animation-delay: 0.5s;
+                        animation-name: slideInLeft;
+                      "
                                             aria-valuenow="25"
                                             aria-valuemin="0"
                                             aria-valuemax="100"
@@ -338,21 +360,21 @@ const Service = () => {
                                         >
                                             <span className="number">90%</span>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="skill-item mb-35">
-                                    <div className="bar-title"><h4>Brand print</h4></div>
-                                    <div className="progress">
+                                    <div className="bar-title"><h4>ZONAL FRANCHISE</h4></div>
+                                    {/* <div className="progress">
                                         <div
                                             className="progress-bar progress-bar__2 wow slideInLeft"
                                             role="progressbar"
-                    //                         style="
-                    //     width: 80%;
-                    //     visibility: visible;
-                    //     animation-duration: 1s;
-                    //     animation-delay: 0.5s;
-                    //     animation-name: slideInLeft;
-                    //   "
+                                            style="
+                        width: 80%;
+                        visibility: visible;
+                        animation-duration: 1s;
+                        animation-delay: 0.5s;
+                        animation-name: slideInLeft;
+                      "
                                             aria-valuenow="25"
                                             aria-valuemin="0"
                                             aria-valuemax="100"
@@ -361,21 +383,21 @@ const Service = () => {
                                         >
                                             <span className="number number__2">80%</span>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="skill-item mb-35">
-                                    <div className="bar-title"><h4>offset print</h4></div>
-                                    <div className="progress">
+                                    <div className="bar-title"><h4>MOBILE FRANCHISE</h4></div>
+                                    {/* <div className="progress">
                                         <div
                                             className="progress-bar progress-bar__3 wow slideInLeft"
                                             role="progressbar"
-                    //                         style="
-                    //     width: 85%;
-                    //     visibility: visible;
-                    //     animation-duration: 1s;
-                    //     animation-delay: 0.5s;
-                    //     animation-name: slideInLeft;
-                    //   "
+                                            style="
+                        width: 85%;
+                        visibility: visible;
+                        animation-duration: 1s;
+                        animation-delay: 0.5s;
+                        animation-name: slideInLeft;
+                      "
                                             aria-valuenow="25"
                                             aria-valuemin="0"
                                             aria-valuemax="100"
@@ -384,7 +406,7 @@ const Service = () => {
                                         >
                                             <span className="number number__3">85%</span>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

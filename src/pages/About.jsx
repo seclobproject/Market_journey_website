@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 // -------images ------------
-import about1 from '../assets/images/about/about-bg-1.jpeg'
+import about1 from '../assets/images/bg/about1.webp'
 import about2 from '../assets/images/about/about-bg-2.jpeg'
 import about3 from '../assets/images/about/about-bg-3.jpeg'
 import aboutIllustration from '../assets/images/bg/about-bg-1.png'
@@ -180,7 +180,7 @@ const About = () => {
                 </div>
             </div> */}
             {/* <div className="counter-area pb-30 grey-bg"> */}
-            <div className="container grey-bg pb-80">
+            {/* <div className="container grey-bg pb-80">
                   <div className="row mt-none-40">
                       <div className="col-xl-3 col-lg-6 col-md-6 mt-40">
                           <div className="counter-box counter-box__2 text-center">
@@ -227,7 +227,7 @@ const About = () => {
                           </div>
                       </div>
                   </div>
-              </div> 
+              </div>  */}
             {/* </div> */}
             <section className="wcu-area wcu-area__2 pt-125 pb-125">
                 <div className="container">
