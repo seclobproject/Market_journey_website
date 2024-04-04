@@ -11,7 +11,7 @@ const Service = () => {
         <div>
 
             <section
-                className="breadcrumb-section pt-180 pb-180 bg_service_img"
+                className="breadcrumb-section pt-180 pb-180 mb-4 bg_service_img"
                 // style={{ backgroundImage: "url(images/bg/breadcrumb-bg-1.jpeg)" }}
                 data-overlay="dark"
                 data-opacity="3"
@@ -31,7 +31,7 @@ const Service = () => {
                     </div>
                 </div>
             </section>
-            <section className="feature-area feature-area__3 pt-125 pb-125">
+            {/* <section className="feature-area feature-area__3 pt-125 pb-125">
                 <div className="container">
                     <div className="row mt-none-30">
                         <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
@@ -92,7 +92,7 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <section className="service-area service-area__2 pt-125 pb-5">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -308,111 +308,7 @@ const Service = () => {
                 </div>
             </section>
             
-            <div className="strategy-section pb-125">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xl-6">
-                            <div
-                                className="strategy_bg"
-                                data-tilt="true"
-                                data-tilt-perspective="3000"
-                            >
-                                <img src={about1} alt="serviceImg" />
-                            </div>
-                        </div>
-                        <div className="col-xl-6 pl-60">
-                            <div className="section-header section-header__2 mb-75">
-                                <h4 className="sub-heading sub-heading__2 mb-10">
-                                    our strategy<span
-                                    ><img
-                                            src="images/shape/heading-shape-4.png"
-                                            className="ml-10"
-                                            alt=""
-                                        /></span>
-                                </h4>
-                                <h2 className="section-title section-title__2 mb-30">
-                                    TRADE WITH CONFIDENCE
-                                </h2>
-                                <p>
-                                    Embodies our trading company's strategy, prioritizing integrity, reliability, and
-                                    expertise.
-                                </p>
-                            </div>
-                            <div className="skill-boxs mt-none-35">
-                                <div className="skill-item mb-35">
-                                    <div className="bar-title"><h4>DISTRICT FRANCHISE</h4></div>
-                                    {/* <div className="progress">
-                                        <div
-                                            className="progress-bar progress-bar__1 wow slideInLeft"
-                                            role="progressbar"
-                                            style="
-                        width: 90%;
-                        visibility: visible;
-                        animation-duration: 1s;
-                        animation-delay: 0.5s;
-                        animation-name: slideInLeft;
-                      "
-                                            aria-valuenow="25"
-                                            aria-valuemin="0"
-                                            aria-valuemax="100"
-                                            data-wow-duration="1s"
-                                            data-wow-delay=".5s"
-                                        >
-                                            <span className="number">90%</span>
-                                        </div>
-                                    </div> */}
-                                </div>
-                                <div className="skill-item mb-35">
-                                    <div className="bar-title"><h4>ZONAL FRANCHISE</h4></div>
-                                    {/* <div className="progress">
-                                        <div
-                                            className="progress-bar progress-bar__2 wow slideInLeft"
-                                            role="progressbar"
-                                            style="
-                        width: 80%;
-                        visibility: visible;
-                        animation-duration: 1s;
-                        animation-delay: 0.5s;
-                        animation-name: slideInLeft;
-                      "
-                                            aria-valuenow="25"
-                                            aria-valuemin="0"
-                                            aria-valuemax="100"
-                                            data-wow-duration="1s"
-                                            data-wow-delay=".5s"
-                                        >
-                                            <span className="number number__2">80%</span>
-                                        </div>
-                                    </div> */}
-                                </div>
-                                <div className="skill-item mb-35">
-                                    <div className="bar-title"><h4>MOBILE FRANCHISE</h4></div>
-                                    {/* <div className="progress">
-                                        <div
-                                            className="progress-bar progress-bar__3 wow slideInLeft"
-                                            role="progressbar"
-                                            style="
-                        width: 85%;
-                        visibility: visible;
-                        animation-duration: 1s;
-                        animation-delay: 0.5s;
-                        animation-name: slideInLeft;
-                      "
-                                            aria-valuenow="25"
-                                            aria-valuemin="0"
-                                            aria-valuemax="100"
-                                            data-wow-duration="1s"
-                                            data-wow-delay=".5s"
-                                        >
-                                            <span className="number number__3">85%</span>
-                                        </div>
-                                    </div> */}
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     )
 }
