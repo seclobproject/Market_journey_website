@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Tradcafe from '../assets/images/icons/tradingcafe.jpg'
+import Tradcafe from '../assets/images/icons/tradingcafe.png'
 import franchise from '../assets/images/icons/franchise.svg'
 import medal from '../assets/images/icons/medal.svg'
 import algo from '../assets/images/icons/algo.svg'

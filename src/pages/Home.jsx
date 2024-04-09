@@ -6,12 +6,13 @@ import PricingItem from '../Components/PricingItem';
 
 //------ images -------
 import hero_shape from '../assets/images/shape/hero-shape.png'
-import hero_banner from '../assets/images/banner/trad.webp'
+import hero_banner from '../assets/images/banner/banner_img_dark.png.png'
 import aboutbg1 from '../assets/images/bg/about-bg-1.png'
 import article1 from '../assets/images/news/news-1.jpeg'
 import article2 from '../assets/images/news/news-2.jpeg'
 import article3 from '../assets/images/news/news-3.jpeg'
-import Tradcafe from '../assets/images/icons/tradingcafe.jpg'
+import Tradcafe from '../assets/images/icons/tradingcafe.png'
+import cup from '../assets/images/icons/Cup.png'
 import franchise from '../assets/images/icons/franchise.svg'
 import medal from '../assets/images/icons/medal.svg'
 import algo from '../assets/images/icons/algo.svg'
@@ -60,34 +61,34 @@ const Home = () => {
 
             <section className="hero position-relative">
                 <div className="swiper" autoplaydisableoninteraction="false">
-                    <div className="swiper-wrapper">
+                    {/* <div className="swiper-wrapper">
                         <div
                             className="swiper-slide swiper-slide-duplicate"
                             data-swiper-slide-index="1"
-                        >
-                            <div className="hero__item">
-                                <div className="container-fluid p-0">
-                                    <div className="row no-gutters">
-                                        <div className="col-xl-6 col-lg-7">
-                                            <div className="hero__content">
-                                                <h2
-                                                    className="hero__title"
-                                                    data-animation="fadeIn"
-                                                    data-delay=".2s"
-                                                    data-duration=".5s"
-                                                >
-                                                    Making Trade Simple,
-                                                    Making Trade Happen
-                                                </h2>
-                                                <p
-                                                    data-animation="fadeInUp"
-                                                    data-delay=".5s"
-                                                    data-duration=".7s"
-                                                >
-                                                    Discover the Flavor of Trade, India’s first largest company and Kerala's first trading Cafe
-                                                    Network.
-                                                </p>
-                                                <Link
+                        > */}
+                    <div className="hero__item" style={{ position: "relative" }} >
+                        <div className="container-fluid p-0">
+                            <div className="row no-gutters" style={{ background: "radial-gradient(ellipse 55% 50%, #00FAFF46, #df313100)", backgroundRepeat: "no-repeat", backgroundPosition: "right", }}>
+                                <div className="col-xl-6 col-lg-7">
+                                    <div className="hero__content">
+                                        <h2
+                                            className="hero__title"
+                                            data-animation="fadeIn"
+                                            data-delay=".2s"
+                                            data-duration=".5s"
+                                        >
+                                            Making Trade Simple,
+                                            Making Trade Happen
+                                        </h2>
+                                        <p
+                                            data-animation="fadeInUp"
+                                            data-delay=".5s"
+                                            data-duration=".7s"
+                                        >
+                                            Discover the Flavor of Trade, India’s first largest company and Kerala's first trading Cafe
+                                            Network.
+                                        </p>
+                                        {/* <Link
                                                     data-animation="fadeInUp"
                                                     data-delay=".7s"
                                                     data-duration=".9s"
@@ -96,65 +97,22 @@ const Home = () => {
                                                 ><span className="icon"
                                                 ><FontAwesomeIcon icon={faArrowRight} />
                                                     </span>
-                                                    Read More</Link>
-                                                <div className="shape">
+                                                    Read More</Link> */}
+                                        {/* <div className="shape">
                                                     <img src={hero_shape} alt="hero_shape" />
-                                                </div>
-                                            </div>
-                                        </div>
+                                                </div> */}
                                     </div>
-                                </div>
-                                <div className="hero__image d-flex align-self-stretch">
-                                    <img src={hero_banner} alt="hero" />
+                                    <img className='moving-image' src={cup} alt="banner_img" style={{ position: "absolute", top: "100px", right: "250px", maxWidth: "500px", width: '100%' }} />
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="swiper-slide" data-swiper-slide-index="0">
-                            <div className="hero__item">
-                                <div className="container-fluid p-0">
-                                    <div className="row no-gutters">
-                                        <div className="col-xl-6 col-lg-7">
-                                            <div className="hero__content">
-                                                <h2
-                                                    className="hero__title"
-                                                    data-animation="fadeIn"
-                                                    data-delay=".2s"
-                                                    data-duration=".5s"
-                                                >
-                                                    Pixen Your
-                                                    <br />Printing Solution
-                                                </h2>
-                                                <p
-                                                    data-animation="fadeInUp"
-                                                    data-delay=".5s"
-                                                    data-duration=".7s"
-                                                >
-                                                    Magnificence in the realistic interchanges
-                                                </p>
-                                                <a
-                                                    data-animation="fadeInUp"
-                                                    data-delay=".7s"
-                                                    data-duration=".9s"
-                                                    className="site-btn"
-                                                    href="about"
-                                                ><span className="icon"
-                                                ><FontAwesomeIcon icon={faArrowRight} /></span>
-                                                    Read More</a
-                                                >
-                                                <div className="shape">
-                                                    <img src={"../assets/images/shape/hero-shape.png"} alt="" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="hero__image d-flex align-self-stretch">
-                                    <img src="../assets/images/banner/hp-slide-1.jpeg" alt="" />
-                                </div>
-                            </div>
-                        </div> */}
 
                     </div>
+
+                    {/* </div> */}
+
+
+                    {/* </div> */}
                 </div>
 
             </section>
@@ -244,7 +202,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6 col-lg-6 mt-50">
+                        {/* <div className="col-xl-6 col-lg-6 mt-50">
                             <div className="service-item d-flex">
                                 <div className="service-item__icon ">
                                     <img src={premium} alt="franchise icon" style={{ width: '100px' }} />
@@ -258,7 +216,7 @@ const Home = () => {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                         <div className="col-xl-6 col-lg-6 mt-50">
                             <div className="service-item d-flex">
                                 <div className="service-item__icon ">
@@ -287,7 +245,7 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-6 col-lg-6 mt-50">
+                        {/* <div className="col-xl-6 col-lg-6 mt-50">
                             <div className="service-item d-flex">
                                 <div className="service-item__icon ">
                                     <img src={algo} alt="algo" style={{ width: '100px' }} />
@@ -299,7 +257,7 @@ const Home = () => {
                                     </p>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="row justify-content-center">
                         <div className="col-xl-8 text-center">
@@ -394,7 +352,7 @@ const Home = () => {
                 </div>
             </section>
 
-            <section className="cta-area theme-bg pt-90 pb-95">
+            {/* <section className="cta-area theme-bg pt-90 pb-95">
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-8">
@@ -413,7 +371,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <section className="pricing-area pt-125 pb-125">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -462,10 +420,10 @@ const Home = () => {
                             text: "Direct Mobile franchise",
                             key: "20%"
                         },
-                            { text: "Direct Zonal franchise", key: "10%" },
-                            { text: " Mobile franchise bonus", key: "8%" },
-                            { text: " Total customer earnings", key: "5%" },
-                            { text: " Product purchasing bonus", key: "4%" },
+                        { text: "Direct Zonal franchise", key: "10%" },
+                        { text: " Mobile franchise bonus", key: "8%" },
+                        { text: " Total customer earnings", key: "5%" },
+                        { text: " Product purchasing bonus", key: "4%" },
                         ]} />
                         <PricingItem title={'Zonal Franchise'} price={'80000'} benifits={[{
                             text: "Direct Mobile franchise",
