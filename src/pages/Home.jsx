@@ -20,6 +20,7 @@ import premium from '../assets/images/icons/premium.svg'
 import monthly from '../assets/images/icons/monthly.svg'
 import weekly from '../assets/images/icons/weekly.svg'
 import day from '../assets/images/icons/day.svg'
+import { Fade } from 'react-awesome-reveal';
 
 const Home = () => {
     const scrollTop = () => {
@@ -69,7 +70,8 @@ const Home = () => {
                     <div className="hero__item" style={{ position: "relative" }} >
                         <div className="container-fluid p-0">
                             <div className="row no-gutters" style={{ background: "radial-gradient(ellipse 55% 50%, #00FAFF46, #df313100)", backgroundRepeat: "no-repeat", backgroundPosition: "right", }}>
-                                <div className="col-xl-6 col-lg-7">
+                                <div className="col-xl-6 col-lg-7" >
+                                    <Fade direction="left" duration={2000} triggerOnce="true">
                                     <div className="hero__content">
                                         <h2
                                             className="hero__title"
@@ -102,7 +104,8 @@ const Home = () => {
                                                     <img src={hero_shape} alt="hero_shape" />
                                                 </div> */}
                                     </div>
-                                    <img className='moving-image' src={cup} alt="banner_img" style={{ position: "absolute", top: "100px", right: "250px", maxWidth: "500px", width: '100%' }} />
+                                    </Fade>
+                                    <img className='moving_image' src={cup} alt="banner_img" style={{ position: "absolute", top: "150px", right: "250px", }} />
                                 </div>
                             </div>
                         </div>
@@ -116,55 +119,57 @@ const Home = () => {
                 </div>
 
             </section>
-
-            <section className="about-area pt-130 pb-130">
-                <div className="container">
-                    <div className="row justify-content-between">
-                        <div className="col-xl-6 pr-0">
-                            <div
-                                className="about__bg"
-                                data-tilt="true"
-                                data-tilt-perspective="3000"
-                            >
-                                <img src={aboutbg1} alt="" />
+            <Fade direction="left" duration={2000} triggerOnce="true">
+                <section className="about-area pt-130 pb-130">
+                    <div className="container">
+                        <div className="row justify-content-between">
+                            <div className="col-xl-6 pr-0">
+                                <div
+                                    className="about__bg"
+                                    data-tilt="true"
+                                    data-tilt-perspective="3000"
+                                >
+                                    <img className='home_about_cup' src={cup} alt="banner_img" />
+                                    <img className='home_about' src={aboutbg1} alt="" />
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-xl-6 pl-80">
-                            <div className="section-header mb-40">
-                                <h4 className="sub-heading mb-10">About Us</h4>
-                                <h2 className="section-title mb-35">
-                                    Connect Our Unique Concept
-                                </h2>
-                                <p>
-                                    India’s first largest company and Kerala’s first trading cafe network aims to expand into
-                                    the 2023 stock market, forging a dynamic presence with our unique blend of culture and
-                                    investment process. Join us in shaping the future of trading.
-                                </p>
-                            </div>
-                            <div className="about-lists">
-                                <ul>
-                                    <li>
-                                        <FontAwesomeIcon icon={faCheck} />&nbsp;&nbsp; Commitment to providing proper training.
-                                    </li>
-                                    <li>
-                                        <FontAwesomeIcon icon={faCheck} />&nbsp;&nbsp; We aim to bring a demat account to every household in Kerala.
-                                    </li>
-                                </ul>
-                                <Link
-                                    data-animation="fadeInUp"
-                                    data-delay=".7s"
-                                    data-duration=".9s"
-                                    className="site-btn mt-55"
-                                    to="about"
-                                ><span className="icon"
-                                ><FontAwesomeIcon icon={faArrowRight} />
-                                    </span>
-                                    Read More</Link>
+                            <div className="col-xl-6 pl-80">
+                                <div className="section-header mb-40">
+                                    <h4 className="sub-heading mb-10">About Us</h4>
+                                    <h2 className="section-title mb-35">
+                                        Connect Our Unique Concept
+                                    </h2>
+                                    <p>
+                                        India’s first largest company and Kerala’s first trading cafe network aims to expand into
+                                        the 2023 stock market, forging a dynamic presence with our unique blend of culture and
+                                        investment process. Join us in shaping the future of trading.
+                                    </p>
+                                </div>
+                                <div className="about-lists">
+                                    <ul>
+                                        <li>
+                                            <FontAwesomeIcon icon={faCheck} />&nbsp;&nbsp; Commitment to providing proper training.
+                                        </li>
+                                        <li>
+                                            <FontAwesomeIcon icon={faCheck} />&nbsp;&nbsp; We aim to bring a demat account to every household in Kerala.
+                                        </li>
+                                    </ul>
+                                    <Link
+                                        data-animation="fadeInUp"
+                                        data-delay=".7s"
+                                        data-duration=".9s"
+                                        className="site-btn mt-55"
+                                        to="about"
+                                    ><span className="icon"
+                                    ><FontAwesomeIcon icon={faArrowRight} />
+                                        </span>
+                                        Read More</Link>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </Fade>
             <section className="service-area pt-125 pb-125">
                 <div className="container">
                     <div className="row justify-content-center">
@@ -187,65 +192,56 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row mt-none-50">
-                        <div className="col-xl-6 col-lg-6 mt-50">
-                            <div className="service-item d-flex">
-                                <div className="service-item__icon "  >
-                                    <img src={Tradcafe} alt="" style={{ width: '130px' }} />
-                                </div>
-                                <div className="service-item__content">
-                                    <h4 className="service-item__title">Trading Cafe</h4>
-                                    <p>
-                                        Our Trading Cafe offers a rich tapestry of real-time discussions, expert sessions, and
-                                        live trading experiences, creating an environment that fosters growth and collaboration.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        {/* <div className="col-xl-6 col-lg-6 mt-50">
-                            <div className="service-item d-flex">
-                                <div className="service-item__icon ">
-                                    <img src={premium} alt="franchise icon" style={{ width: '100px' }} />
-                                </div>
-                                <div className="service-item__content">
-                                    <h4 className="service-item__title">Premium Call Outs</h4>
-                                    <p>
-                                        Our Premium Call Outs service provides you with helping you make informed decisions
-                                        and capitalize on market opportunities. Elevate your trading experience with the
-                                        precision and expertise offered by Market Journey.
-                                    </p>
+                    <Fade direction="up" duration={2000} triggerOnce="true">
+                        <div className="row mt-none-50">
+                            <div className="col-xl-6 col-lg-6 mt-50">
+                                <div className="service-item service-item__2 d-flex">
+                                    <div
+                                        className="service-item__icon service-item__icon--noborder service-item__icon--1 "
+                                    >
+                                        <img src={Tradcafe} alt="" style={{ width: '100px' }} />
+                                    </div>
+                                    <div className="service-item__content service-item__content--2">
+                                        <h4 className="service-item__title">Trading Cafe</h4>
+                                        <p>
+                                            Our Trading Cafe offers a rich tapestry of real-time discussions, expert sessions, and
+                                            live trading experiences, creating an environment that fosters growth and collaboration.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div> */}
-                        <div className="col-xl-6 col-lg-6 mt-50">
-                            <div className="service-item d-flex">
-                                <div className="service-item__icon ">
-                                    <img src={franchise} alt="franchise icon" style={{ width: '100px' }} />
-                                </div>
-                                <div className="service-item__content">
-                                    <h4 className="service-item__title">Franchise</h4>
-                                    <p>
-                                        District franchise, Zonal franchise, and Mobile franchise to navigate the world of trading
-                                        and investments, while benefiting from a rewarding entrepreneurial venture.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-6 col-lg-6 mt-50">
-                            <div className="service-item d-flex">
-                                <div className="service-item__icon">
-                                    <img src={medal} alt="" style={{ width: '100px' }} />
-                                </div>
-                                <div className="service-item__content">
-                                    <h4 className="service-item__title"> Certified Online-Offline Batches</h4>
-                                    <p>
-                                        District franchise, Zonal franchise, and Mobile franchise to navigate the world of trading
-                                        and investments, while benefiting from a rewarding entrepreneurial venture.
-                                    </p>
+                            <div className="col-xl-6 col-lg-6 mt-50">
+                                <div className="service-item service-item__2 d-flex">
+                                    <div
+                                        className="service-item__icon service-item__icon--noborder service-item__icon--1 "
+                                    >
+                                        <img src={franchise} alt="" style={{ width: '100px' }} />
+                                    </div>
+                                    <div className="service-item__content service-item__content--2">
+                                        <h4 className="service-item__title">Franchise</h4>
+                                        <p>
+                                            District franchise, Zonal franchise, and Mobile franchise to navigate the world of trading
+                                            and investments, while benefiting from a rewarding entrepreneurial venture.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        {/* <div className="col-xl-6 col-lg-6 mt-50">
+                            <div className="col-xl-6 col-lg-6 mt-50">
+                                <div className="service-item service-item__2 d-flex">
+                                    <div
+                                        className="service-item__icon service-item__icon--noborder service-item__icon--1 "
+                                    >
+                                        <img src={medal} alt="certified" style={{ width: '100px' }} />
+                                    </div>
+                                    <div className="service-item__content service-item__content--2">
+                                        <h4 className="service-item__title"> Certified Online-Offline Batches </h4>
+                                        <p>
+                                            Market journey provides online trading courses on the art of financial markets. Teaches effective trading strategies, and gain the confidence to navigate the online trading landscape.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <div className="col-xl-6 col-lg-6 mt-50">
                             <div className="service-item d-flex">
                                 <div className="service-item__icon ">
                                     <img src={algo} alt="algo" style={{ width: '100px' }} />
@@ -258,7 +254,8 @@ const Home = () => {
                                 </div>
                             </div>
                         </div> */}
-                    </div>
+                        </div>
+                    </Fade>
                     <div className="row justify-content-center">
                         <div className="col-xl-8 text-center">
                             <div className="view-all mt-55">
@@ -294,47 +291,49 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="row mt-none-30 justify-content-center" style={{ marginBottom: "100px" }}>
-                        <div className="col-xl-3 col-lg-6 col-md-6 mt-30 ">
-                            <div className="feature-item h-100">
-                                <div className="feature-item__icon">
-                                    <img src={monthly} alt="" />
-                                </div>
-                                <div className="feature-item__content">
-                                    <h4 className="feature-item__title">Monthly Awareness</h4>
-                                    <p>
-                                        Each month, we delve into different aspects of trading, from market trends and analysis to risk management strategies and emerging opportunities.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
-                            <div className="feature-item h-100">
-                                <div className="feature-item__icon ">
-                                    <img src={weekly} alt="" />
-                                </div>
-                                <div className="feature-item__content">
-                                    <h4 className="feature-item__title">Weekly Awareness</h4>
-                                    <p>
-                                        Every week, we offer a curated selection of insightful sessions, workshops, and discussions aimed at keeping you informed and empowered in the ever-evolving realm of trading.
-                                    </p>
+                    <Fade direction="up" duration={1500} triggerOnce="true">
+
+                        <div className="row mt-none-30 justify-content-center" style={{ marginBottom: "100px" }}>
+                            <div className="col-xl-3 col-lg-6 col-md-6 mt-30 ">
+                                <div className="feature-item h-100">
+                                    <div className="feature-item__icon ">
+                                        <img src={monthly} alt="" />
+                                    </div>
+                                    <div className="feature-item__content">
+                                        <h4 className="feature-item__title">Monthly Awareness</h4>
+                                        <p>
+                                            Each month, we delve into different aspects of trading, from market trends and analysis to risk management strategies and emerging opportunities.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
-                            <div className="feature-item h-100">
-                                <div className="feature-item__icon ">
-                                    <img src={day} alt="" />
-                                </div>
-                                <div className="feature-item__content">
-                                    <h4 className="feature-item__title">Daily 9 AM</h4>
-                                    <p>
-                                        Daily at 9 AM for a power-packed session designed to kick start your trading day with insight and strategy.
-                                    </p>
+                            <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
+                                <div className="feature-item h-100">
+                                    <div className="feature-item__icon ">
+                                        <img src={weekly} alt="" />
+                                    </div>
+                                    <div className="feature-item__content">
+                                        <h4 className="feature-item__title">Weekly Awareness</h4>
+                                        <p>
+                                            Every week, we offer a curated selection of insightful sessions, workshops, and discussions aimed at keeping you informed and empowered in the ever-evolving realm of trading.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        {/* <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
+                            <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
+                                <div className="feature-item h-100">
+                                    <div className="feature-item__icon ">
+                                        <img src={day} alt="" />
+                                    </div>
+                                    <div className="feature-item__content">
+                                        <h4 className="feature-item__title">Daily 9 AM</h4>
+                                        <p>
+                                            Daily at 9 AM for a power-packed session designed to kick start your trading day with insight and strategy.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* <div className="col-xl-3 col-lg-6 col-md-6 mt-30">
                             <div className="feature-item">
                                 <div className="feature-item__icon feature-item__icon--4">
                                     <img src="../assets/images/icons/f-4.png" alt="" />
@@ -348,7 +347,8 @@ const Home = () => {
                                 </div>
                             </div>
                         </div> */}
-                    </div>
+                        </div>
+                    </Fade>
                 </div>
             </section>
 
@@ -394,6 +394,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
+                    <Fade direction="right" duration={2000} triggerOnce="true">
                     <div className="row mt-none-30">
                         {/* <div className="col-xl-4 col-lg-6 mt-30">
                             <div className="pricing-item">
@@ -486,6 +487,7 @@ const Home = () => {
                             </div>
                         </div> */}
                     </div>
+                    </Fade>
                 </div>
             </section>
             {/* <section className="news-area grey-bg pt-120 pb-120">

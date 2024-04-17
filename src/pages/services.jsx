@@ -200,9 +200,9 @@ const Service = () => {
                     </div>
                 </div>
             </section>
-            <div className="brand-section pt-125 grey-bg">
+            {/* <div className="brand-section pt-125 grey-bg">
                
-            </div>
+            </div> */}
             <section className="wp-area pt-125 pb-125">
                 <div className="container">
                     <div className="row justify-content-center">
