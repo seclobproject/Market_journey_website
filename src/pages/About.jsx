@@ -57,7 +57,7 @@ const About = () => {
             <section className="about-area pt-125 pb-125">
                 <div className="container">
                     <div className="row justify-content-between">
-                        <div className="col-xl-5">
+                        <div className="col-xl-5 about-thumb-imgs">
                             <div className="about__bg about__bg--2 mt-75">
                                 <div className="big-thumb">
                                     <img src={about1} alt="" />

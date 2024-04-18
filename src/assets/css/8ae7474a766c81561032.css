@@ -14043,6 +14043,9 @@ input.form-control-sm {
     margin-bottom: 150px;
   }
 }
+.about-thumb-imgs{
+  display: block;
+}
 .about__bg--2 .big-thumb {
   position: relative;
   z-index: 1;
@@ -14089,6 +14092,9 @@ input.form-control-sm {
   .about__bg--3 img {
     max-width: 100%;
   }
+  .about-thumb-imgs{
+  display: none;
+}
 }
 .about-lists ul li {
   display: -webkit-flex;
@@ -17892,7 +17898,7 @@ input.form-control-sm {
   text-transform: uppercase;
   margin-bottom: 10px;
   font-weight: 500;
-  color: #0c2957;
+  /* color: #0c2957; */
   font-family: Rubik, sans-serif;
 }
 .skill-boxs .skill-item .progress {
