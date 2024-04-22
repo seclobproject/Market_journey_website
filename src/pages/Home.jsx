@@ -79,8 +79,8 @@ const Home = () => {
                                             data-delay=".2s"
                                             data-duration=".5s"
                                         >
-                                            Making Trade Simple,
-                                            Making Trade Happen
+                                                TRADE SMART, EAT WELL, DINING MEETS MARKET
+                                                MASTERY
                                         </h2>
                                         <p
                                             data-animation="fadeInUp"
@@ -137,7 +137,7 @@ const Home = () => {
                                 <div className="section-header mb-40">
                                     <h4 className="sub-heading mb-10">About Us</h4>
                                     <h2 className="section-title mb-35">
-                                        Connect Our Unique Concept
+                                        ENJOY THE PERFECT BLEND AT EAT FOOD AND TRADE
                                     </h2>
                                     <p>
                                         India’s first largest company and Kerala’s first trading cafe network aims to expand into

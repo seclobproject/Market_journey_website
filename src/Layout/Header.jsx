@@ -67,7 +67,7 @@ const Header = () => {
                                                 textAlign: 'center',
                                                 textIndent: 0,
                                                 fontSize: 18,
-                                                color: '#f7ae15'
+                                                color: '#89BE1D'
                                             }}
                                         >X</a>
                                     </div>
