@@ -105,6 +105,7 @@ const Home = () => {
                                                 </div> */}
                                     </div>
                                     </Fade>
+                                    
                                     <img className='moving_image' src={cup} alt="banner_img" style={{ position: "absolute", top: "150px", right: "250px", }} />
                                 </div>
                             </div>
