@@ -18020,6 +18020,7 @@ input.form-control-sm {
   margin-bottom: 15px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  color: #0c2957;
 }
 @media (prefers-reduced-motion: reduce) {
   .contact-info__title {

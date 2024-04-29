@@ -6,8 +6,8 @@ import 'slick-carousel/slick/slick-theme.css';
 
 // -------images ------------
 import about1 from '../assets/images/bg/about1.webp'
-import about2 from '../assets/images/about/about-bg-2.jpeg'
-import about3 from '../assets/images/about/about-bg-3.jpeg'
+import about2 from '../assets/images/about/about-bg-4.jpg'
+import about3 from '../assets/images/about/about-bg-5.jpg'
 import aboutIllustration from '../assets/images/bg/about-bg-1.png'
 import quote2 from '../assets/images/icons/t-quote-2.png'
 const About = () => {
@@ -63,10 +63,10 @@ const About = () => {
                                     <img src={about1} alt="" />
                                 </div>
                                 <div className="mid-thumb position-absulate">
-                                    <img src={about2} alt="" />
+                                    <img src={about2} alt="" style={{ maxWidth: "250px", width: "100%" }} />
                                 </div>
                                 <div className="small-thumb position-absulate">
-                                    <img src={about3} alt="" />
+                                    <img src={about3} alt="" style={{ maxWidth: "250px", width: "100%" }} />
                                 </div>
                                 <span className="circle-shape position-absulate"
                                 ><img src="images/shape/border-shape-2.png" alt="" /></span
@@ -238,7 +238,7 @@ const About = () => {
                                 data-tilt="true"
                                 data-tilt-perspective="3000"
                             >
-                                <img src={aboutIllustration} alt="" />
+                                <img src={aboutIllustration} alt="" style={{maxWidth:"600px",width:"100%"}}/>
                             </div>
                         </div>
                         <div className="col-xl-6">
