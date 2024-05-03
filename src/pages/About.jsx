@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -9,7 +8,6 @@ import about1 from '../assets/images/bg/about1.webp'
 import about2 from '../assets/images/about/about-bg-4.jpg'
 import about3 from '../assets/images/about/about-bg-5.jpg'
 import aboutIllustration from '../assets/images/bg/about-bg-1.png'
-import quote2 from '../assets/images/icons/t-quote-2.png'
 const About = () => {
 
     useEffect(() => {

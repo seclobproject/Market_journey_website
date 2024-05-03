@@ -5,18 +5,13 @@ import { Link } from 'react-router-dom';
 import PricingItem from '../Components/PricingItem';
 
 //------ images -------
-import hero_shape from '../assets/images/shape/hero-shape.png'
-import hero_banner from '../assets/images/banner/banner_img_dark.png.png'
+
 import aboutbg1 from '../assets/images/bg/about-bg-1.png'
-import article1 from '../assets/images/news/news-1.jpeg'
-import article2 from '../assets/images/news/news-2.jpeg'
-import article3 from '../assets/images/news/news-3.jpeg'
+
 import Tradcafe from '../assets/images/icons/tradingcafe.png'
 import cup from '../assets/images/icons/Cup.png'
 import franchise from '../assets/images/icons/franchise.svg'
 import medal from '../assets/images/icons/medal.svg'
-import algo from '../assets/images/icons/algo.svg'
-import premium from '../assets/images/icons/premium.svg'
 import monthly from '../assets/images/icons/monthly.svg'
 import weekly from '../assets/images/icons/weekly.svg'
 import day from '../assets/images/icons/day.svg'
@@ -72,25 +67,25 @@ const Home = () => {
                             <div className="row no-gutters" style={{ background: "radial-gradient(ellipse 55% 50%, #00FAFF46, #df313100)", backgroundRepeat: "no-repeat", backgroundPosition: "right", }}>
                                 <div className="col-xl-6 col-lg-7" >
                                     <Fade direction="left" duration={2000} triggerOnce="true">
-                                    <div className="hero__content">
-                                        <h2
-                                            className="hero__title"
-                                            data-animation="fadeIn"
-                                            data-delay=".2s"
-                                            data-duration=".5s"
-                                        >
+                                        <div className="hero__content">
+                                            <h2
+                                                className="hero__title"
+                                                data-animation="fadeIn"
+                                                data-delay=".2s"
+                                                data-duration=".5s"
+                                            >
                                                 TRADE SMART, EAT WELL, DINING MEETS MARKET
                                                 MASTERY
-                                        </h2>
-                                        <p
-                                            data-animation="fadeInUp"
-                                            data-delay=".5s"
-                                            data-duration=".7s"
-                                        >
-                                            Discover the Flavor of Trade, India’s first largest company and Kerala's first trading Cafe
-                                            Network.
-                                        </p>
-                                        {/* <Link
+                                            </h2>
+                                            <p
+                                                data-animation="fadeInUp"
+                                                data-delay=".5s"
+                                                data-duration=".7s"
+                                            >
+                                                Discover the Flavor of Trade, India’s first largest company and Kerala's first trading Cafe
+                                                Network.
+                                            </p>
+                                            {/* <Link
                                                     data-animation="fadeInUp"
                                                     data-delay=".7s"
                                                     data-duration=".9s"
@@ -100,12 +95,12 @@ const Home = () => {
                                                 ><FontAwesomeIcon icon={faArrowRight} />
                                                     </span>
                                                     Read More</Link> */}
-                                        {/* <div className="shape">
+                                            {/* <div className="shape">
                                                     <img src={hero_shape} alt="hero_shape" />
                                                 </div> */}
-                                    </div>
+                                        </div>
                                     </Fade>
-                                    
+
                                     <img className='moving_image' src={cup} alt="banner_img" style={{ position: "absolute", top: "150px", right: "250px", }} />
                                 </div>
                             </div>
@@ -396,8 +391,8 @@ const Home = () => {
                         </div>
                     </div>
                     <Fade direction="right" duration={2000} triggerOnce="true">
-                    <div className="row mt-none-30">
-                        {/* <div className="col-xl-4 col-lg-6 mt-30">
+                        <div className="row mt-none-30">
+                            {/* <div className="col-xl-4 col-lg-6 mt-30">
                             <div className="pricing-item">
                                 <div className="pricing-item__head">
                                     <h2 className="heading-title">Standard</h2>
@@ -418,34 +413,34 @@ const Home = () => {
                                 >
                             </div>
                         </div> */}
-                        <PricingItem title={'District Franchise'} price={'100000'} benifits={[{
-                            text: "Direct Mobile franchise",
-                            key: "20%"
-                        },
-                        { text: "Direct Zonal franchise", key: "10%" },
-                        { text: " Mobile franchise bonus", key: "8%" },
-                        { text: " Total customer earnings", key: "5%" },
-                        { text: " Product purchasing bonus", key: "4%" },
-                        ]} />
-                        <PricingItem title={'Zonal Franchise'} price={'80000'} benifits={[{
-                            text: "Direct Mobile franchise",
-                            key: "20%"
-                        },
-                        { text: "Direct District franchise", key: "10%" },
-                        { text: " Mobile franchise referral", key: "12%" },
-                        { text: " Total customer earnings", key: "8%" },
-                        { text: " Product purchasing bonus", key: "6%" },
-                        ]} />
-                        <PricingItem title={'Mobile Franchise'} price={'5000'} benifits={[{
-                            text: "Direct Mobile franchise",
-                            key: "20%"
-                        },
-                        { text: "Direct product referal", key: "10%" },
-                        { text: " District/Zonal franchise", key: "10%" },
-                        { text: " Brokerage", key: "8%" },
-                        { text: " Product purchasing bonus", key: "6%" },
-                        ]} />
-                        {/* <div className="col-xl-4 col-lg-6 mt-30">
+                            <PricingItem title={'District Franchise'} price={'100000'} benifits={[{
+                                text: "Direct Mobile franchise",
+                                key: "20%"
+                            },
+                            { text: "Direct Zonal franchise", key: "10%" },
+                            { text: " Mobile franchise bonus", key: "8%" },
+                            { text: " Total customer earnings", key: "5%" },
+                            { text: " Product purchasing bonus", key: "4%" },
+                            ]} />
+                            <PricingItem title={'Zonal Franchise'} price={'80000'} benifits={[{
+                                text: "Direct Mobile franchise",
+                                key: "20%"
+                            },
+                            { text: "Direct District franchise", key: "10%" },
+                            { text: " Mobile franchise referral", key: "12%" },
+                            { text: " Total customer earnings", key: "8%" },
+                            { text: " Product purchasing bonus", key: "6%" },
+                            ]} />
+                            <PricingItem title={'Mobile Franchise'} price={'5000'} benifits={[{
+                                text: "Direct Mobile franchise",
+                                key: "20%"
+                            },
+                            { text: "Direct product referal", key: "10%" },
+                            { text: " District/Zonal franchise", key: "10%" },
+                            { text: " Brokerage", key: "8%" },
+                            { text: " Product purchasing bonus", key: "6%" },
+                            ]} />
+                            {/* <div className="col-xl-4 col-lg-6 mt-30">
                             <div className="pricing-item">
                                 <div className="pricing-item__head">
                                     <h2 className="heading-title">Business</h2>
@@ -466,7 +461,7 @@ const Home = () => {
                                 >
                             </div>
                         </div> */}
-                        {/* <div className="col-xl-4 col-lg-6 mt-30">
+                            {/* <div className="col-xl-4 col-lg-6 mt-30">
                             <div className="pricing-item">
                                 <div className="pricing-item__head">
                                     <h2 className="heading-title">Premium</h2>
@@ -487,7 +482,7 @@ const Home = () => {
                                 >
                             </div>
                         </div> */}
-                    </div>
+                        </div>
                     </Fade>
                 </div>
             </section>

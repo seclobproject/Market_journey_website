@@ -83,14 +83,14 @@ const Footer = () => {
                                   > */}
                                 </div>
                                 <div className="recent-news__content mt-10">
-                                    <Link className="recent-news__title" to="/privacy"
+                                    <Link className="recent-news__title" to="/"
                                     >Privacy Policy</Link>
                                     {/* <a className="recent-news__date" href="news-details"
                                   >Sep 21. 2020</a
                                   > */}
                                 </div>
                                 <div className="recent-news__content mt-10">
-                                    <Link className="recent-news__title" to="/terms"
+                                    <Link className="recent-news__title" to="/"
                                     >Terms & Condition</Link>
                                     {/* <a className="recent-news__date" href="news-details"
                                   >Sep 21. 2020</a

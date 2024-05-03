@@ -5,7 +5,6 @@ import franchise from '../assets/images/icons/franchise.svg'
 import medal from '../assets/images/icons/medal.svg'
 import algo from '../assets/images/icons/algo.svg'
 import premium from '../assets/images/icons/premium.svg'
-import about1 from '../assets/images/bg/about1.webp'
 const Service = () => {
     return (
         <div>
