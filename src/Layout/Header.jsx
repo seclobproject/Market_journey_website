@@ -48,9 +48,11 @@ const Header = () => {
                                                 </li>
                                             ))}
                                         </ul>
+
                                     </nav>
                                 </div>
-                                {/* <Link className="quote-btn" to="contact">Login</Link> */}
+                                <Link to="https://member.marketjourney.in/auth/boxed-signin">
+                                    <button className={`mainmenu ${toggleHeader ? 'active_menus active_Login' : 'd-none'} d-lg-block`} style={{width:"70px", backgroundColor: "transparent", paddingLeft: "12px", paddingRight: "12px", paddingTop: "5px", paddingBottom: "5px", borderRadius: "10px", color: "white", border: "1px solid"  }}>Login</button></Link>
 
                                 <div className={`mobile-menu mean-container d-lg-none`}>
                                     <div className="mean-bar">
