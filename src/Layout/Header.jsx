@@ -47,13 +47,17 @@ const Header = () => {
                                                     {/* <Link className={selectedItem === index ? 'selectedMenu' : ''} to={item.link}>{item.label}</Link> */}
                                                 </li>
                                             ))}
+                                            <li>
+                                                <Link to="https://member.marketjourney.in/auth/boxed-signin">
+                                                    <button  style={{ width: "70px", backgroundColor: "transparent", paddingLeft: "12px", paddingRight: "12px", paddingTop: "5px", paddingBottom: "5px", borderRadius: "10px", color: "white", border: "1px solid" }}>Login</button></Link>
+
+                                            </li>
                                         </ul>
-
+                                        
                                     </nav>
+                                 
                                 </div>
-                                <Link to="https://member.marketjourney.in/auth/boxed-signin">
-                                    <button className={`mainmenu ${toggleHeader ? 'active_menus active_Login' : 'd-none'} d-lg-block`} style={{width:"70px", backgroundColor: "transparent", paddingLeft: "12px", paddingRight: "12px", paddingTop: "5px", paddingBottom: "5px", borderRadius: "10px", color: "white", border: "1px solid"  }}>Login</button></Link>
-
+                               
                                 <div className={`mobile-menu mean-container d-lg-none`}>
                                     <div className="mean-bar">
                                         <a onClick={() => setToggleHeader(true)} className={`meanmenu-reveal ${toggleHeader ? 'd-none' : 'd-block'}`}

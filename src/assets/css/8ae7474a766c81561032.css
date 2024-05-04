@@ -12669,6 +12669,8 @@ h6 {
 }
 .header__bottom {
   padding: 0 105px;
+background-color: rgba(10, 33, 51, 0.5); 
+
 }
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
   .header__bottom {
@@ -12771,7 +12773,7 @@ h6 {
 .navarea {
   display: -webkit-flex;
   display: -moz-box;
-  display: flex;
+  /* display: flex; */
   width: 100%;
   justify-content: space-evenly;
   -webkit-flex-wrap: wrap;
@@ -12823,6 +12825,7 @@ h6 {
 }
 .mainmenu {
   padding-left: 83px;
+  display: flex;
 }
 @media (max-width: 1530px) {
   .mainmenu {
@@ -13069,11 +13072,11 @@ h6 {
     background-color: #0a2133;
   }
 }
-.active_Login{
+/* .active_Login{
   position: absolute;
-  left: 100px;
-  top:100px
-}
+  left: 40%;
+  top:270px
+} */
 .call-info {
   -webkit-align-items: center;
   -moz-box-align: center;
