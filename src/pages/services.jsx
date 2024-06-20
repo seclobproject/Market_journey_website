@@ -154,27 +154,12 @@ const Service = () => {
                                 <div
                                     className="service-item__icon service-item__icon--noborder service-item__icon--1 "
                                 >
-                                    <img src={medal} alt="certified" style={{width:'100px'}}/>
+                                    <img src={medal} alt="certified" style={{ width: '100px' }} />
                                 </div>
                                 <div className="service-item__content service-item__content--2">
                                     <h4 className="service-item__title"> Certified Online-Offline Batches </h4>
                                     <p>
                                         Market journey provides online trading courses on the art of financial markets. Teaches effective trading strategies, and gain the confidence to navigate the online trading landscape.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-xl-6 col-lg-6 mt-50">
-                            <div className="service-item service-item__2 d-flex">
-                                <div
-                                    className="service-item__icon service-item__icon--noborder service-item__icon--1 "
-                                >
-                                    <img src={algo} alt="algo" style={{ width: '100px' }} />
-                                </div>
-                                <div className="service-item__content service-item__content--2">
-                                    <h4 className="service-item__title">Algo Creation</h4>
-                                    <p>
-                                        Algo creation service combines technology with market insights, allowing you to automate and optimize your trading decisions. Whether you're a seasoned trader or just starting, let Market Journey elevate your trading experience.
                                     </p>
                                 </div>
                             </div>
@@ -196,6 +181,79 @@ const Service = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="col-xl-6 col-lg-6 mt-50">
+                            <div className="service-item service-item__2 d-flex">
+                                <div
+                                    className="service-item__icon service-item__icon--noborder service-item__icon--1 "
+                                >
+                                    <img src={algo} alt="algo" style={{ width: '100px' }} />
+                                </div>
+                                <div className="service-item__content service-item__content--2">
+                                    <h4 className="service-item__title">Algo</h4>
+                                    <p>Algorithms built by industry experts are  available on a single click with uTrade Originals. Just pick a strategy that aligns with your algo trading objectives and subscribe to it.
+                                        A super-fast algorithmic trading platform that let’s you plan, strategise and automate your trades as well as execute them within milliseconds is here!<br />
+                                        <b> fees : 4500 </b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-6 col-lg-6 mt-50">
+                            <div className="service-item service-item__2 d-flex">
+                                <div
+                                    className="service-item__icon service-item__icon--noborder service-item__icon--1 "
+                                >
+                                    <img src={algo} alt="algo" style={{ width: '100px' }} />
+                                </div>
+                                <div className="service-item__content service-item__content--2">
+                                    <h4 className="service-item__title">AMC  momentum  0.5 trading strategy</h4>
+                                    <li> Capital  25% only  use</li>
+                                    <li>  daily 2 trade only</li>
+                                    <li>  30 points stop loss 30 point target
+                                        Buying pre and trial 5 point </li>
+                                    <table>
+                                        <thead><tr><th>Capital</th><th>use lote</th></tr></thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>30000</td><td>2 lote</td>  </tr>
+                                            <tr> <td>60000</td><td>4 lote</td></tr>
+                                            <tr> <td>90000</td><td>6 lote</td></tr>
+                                            <tr> <td>120000</td><td>8 lote</td></tr>
+                                            <tr><td>150000</td><td>10 lote</td></tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-6 col-lg-6 mt-50">
+                            <div className="service-item service-item__2 d-flex">
+                                <div
+                                    className="service-item__icon service-item__icon--noborder service-item__icon--1 "
+                                >
+                                    <img src={algo} alt="algo" style={{ width: '100px' }} />
+                                </div>
+                                <div className="service-item__content service-item__content--2">
+                                    <h4 className="service-item__title">AMC  momentum trading 1.1 strategy</h4>
+                                    <li> Capital  25% only  use</li>
+                                    <li>  daily 2 trade only</li>
+                                    <li>  30 points stop loss 30 point target
+                                        Buying pre and trial 5 point </li>
+                                    <table>
+                                        <thead><tr><th>Capital</th><th>use lote</th></tr></thead>
+                                        <tbody>
+                                            <tr> <td>60000</td><td>2 lote</td></tr>
+                                            <tr> <td>120000</td><td>4 lote</td></tr>
+                                            <tr><td>180000</td><td>6 lote</td></tr>
+                                            <tr><td>250000</td><td>8 lote</td></tr>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
@@ -282,7 +340,7 @@ const Service = () => {
                                 <div className="wp-box__content">
                                     <h4 className="wp-box__title">N-A</h4>
                                     <p>
-                                        Not an Average 
+                                        Not an Average
                                     </p>
                                 </div>
                                 {/* <div className="wp-box__icon mt-35">
@@ -306,8 +364,8 @@ const Service = () => {
                     </div>
                 </div>
             </section>
-            
-            
+
+
         </div>
     )
 }

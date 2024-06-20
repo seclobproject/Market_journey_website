@@ -29,7 +29,7 @@ const Header = () => {
                         <div className="col-xl-9 col-lg-12" style={{ width: '100%' }}>
                             <div className="navarea">
                                 <Link onClick={scrollTop} className="site-logo" to="/"
-                                ><img src={logo} alt="LOGO"
+                                ><img className='moving_image' src={logo} alt="LOGO"
                                     /></Link>
                                 <div className={`mainmenu ${toggleHeader ? 'active_menus' : 'd-none'} d-lg-block`}>
 

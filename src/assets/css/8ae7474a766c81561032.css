@@ -13451,6 +13451,9 @@ input.form-control-sm {
     padding-left: 10%;
     /* padding-right: 10%; */
   }
+    .hero_img{
+    display: none;
+  }
   /* .moving_image{
     display: none;
   } */
@@ -13459,9 +13462,12 @@ input.form-control-sm {
   .hero__content .shape {
     right: -235px;
   }
-  .moving_image {
+    .hero_img{
     display: none;
   }
+  /* .moving_image {
+    display: none;
+  } */
 }
 .hero__content--2 {
   min-height: 570px;
@@ -13495,9 +13501,12 @@ input.form-control-sm {
   .hero__content--2 {
     margin: 0 0 0 auto;
   }
-  .moving_image {
+  .hero_img{
     display: none;
   }
+  /* .moving_image {
+    display: none;
+  } */
   .home_about {
     display: none;
   }

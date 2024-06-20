@@ -7,14 +7,15 @@ import PricingItem from '../Components/PricingItem';
 //------ images -------
 
 import aboutbg1 from '../assets/images/bg/about-bg-1.png'
-
+import algo from '../assets/images/icons/algo.svg'
 import Tradcafe from '../assets/images/icons/tradingcafe.png'
-import cup from '../assets/images/icons/Cup.png'
+import cup from '../assets/images/bg/about1.webp'
 import franchise from '../assets/images/icons/franchise.svg'
 import medal from '../assets/images/icons/medal.svg'
 import monthly from '../assets/images/icons/monthly.svg'
 import weekly from '../assets/images/icons/weekly.svg'
 import day from '../assets/images/icons/day.svg'
+import wtsapp from '../assets/images/icons/whtspp.webp'
 import { Fade } from 'react-awesome-reveal';
 
 const Home = () => {
@@ -101,7 +102,7 @@ const Home = () => {
                                         </div>
                                     </Fade>
 
-                                    <img className='moving_image' src={cup} alt="banner_img" style={{ position: "absolute", top: "150px", right: "250px", }} />
+                                    <img className='hero_img' src={cup} alt="banner_img" style={{ position: "absolute", top: "250px", right: "250px", maxWidth: '450px' }} />
                                 </div>
                             </div>
                         </div>
@@ -115,6 +116,11 @@ const Home = () => {
                 </div>
 
             </section>
+            <a
+                href={`https://wa.me/8089530707`}
+                target="_blank"
+                rel="noopener noreferrer"
+            ><img src={wtsapp} alt="whatsapp" style={{ width: '50px', position: "fixed", bottom: "80px", right: "30px", zIndex: '9', cursor: "pointer" }} /></a>
             <Fade direction="left" duration={2000} triggerOnce="true">
                 <section className="about-area pt-130 pb-130">
                     <div className="container">
@@ -237,19 +243,22 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className="col-xl-6 col-lg-6 mt-50">
-                            <div className="service-item d-flex">
-                                <div className="service-item__icon ">
-                                    <img src={algo} alt="algo" style={{ width: '100px' }} />
-                                </div>
-                                <div className="service-item__content">
-                                    <h4 className="service-item__title">Algo Creation</h4>
-                                    <p>
-                                        Algo creation service combines technology with market insights, allowing you to automate and optimize your trading decisions. Whether you're a seasoned trader or just starting, let Market Journey elevate your trading experience.
-                                    </p>
+                            <div className="col-xl-6 col-lg-6 mt-50">
+                                <div className="service-item service-item__2 d-flex">
+                                    <div
+                                        className="service-item__icon service-item__icon--noborder service-item__icon--1 "
+                                    >
+                                        <img src={algo} alt="certified" style={{ width: '100px' }} />
+                                    </div>
+                                    <div className="service-item__content service-item__content--2">
+                                        <h4 className="service-item__title"> Algo </h4>
+                                        <p>
+                                            Algorithms built by industry experts are  available on a single click with uTrade Originals. Just pick a strategy that aligns with your algo trading objectives and subscribe to it.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </div> */}
+
                         </div>
                     </Fade>
                     <div className="row justify-content-center">
@@ -298,7 +307,7 @@ const Home = () => {
                                     <div className="feature-item__content">
                                         <h4 className="feature-item__title">Monthly Awareness</h4>
                                         <p>
-                                            Each month, we delve into different aspects of trading, from market trends and analysis to risk management strategies and emerging opportunities.
+                                            7th of  Each month, we delve into different aspects of trading, from market trends and analysis to risk management strategies and emerging opportunities.
                                         </p>
                                     </div>
                                 </div>
@@ -311,7 +320,7 @@ const Home = () => {
                                     <div className="feature-item__content">
                                         <h4 className="feature-item__title">Weekly Awareness</h4>
                                         <p>
-                                            Every week, we offer a curated selection of insightful sessions, workshops, and discussions aimed at keeping you informed and empowered in the ever-evolving realm of trading.
+                                            Every Saturday, we offer a curated selection of insightful sessions, workshops, and discussions aimed at keeping you informed and empowered in the ever-evolving realm of trading.
                                         </p>
                                     </div>
                                 </div>
@@ -413,32 +422,32 @@ const Home = () => {
                                 >
                             </div>
                         </div> */}
-                            <PricingItem title={'District Franchise'} price={'100000'} benifits={[{
+                            <PricingItem title={'District Franchise'} price={'200000'} benifits={[{
                                 text: "Direct Mobile franchise",
-                                key: "20%"
+                                key: "10%"
                             },
                             { text: "Direct Zonal franchise", key: "10%" },
-                            { text: " Mobile franchise bonus", key: "8%" },
+                            { text: " Mobile franchise bonus", key: "5%" },
                             { text: " Total customer earnings", key: "5%" },
-                            { text: " Product purchasing bonus", key: "4%" },
+                            { text: " Product purchasing bonus", key: "2%" },
                             ]} />
-                            <PricingItem title={'Zonal Franchise'} price={'80000'} benifits={[{
+                            <PricingItem title={'Zonal Franchise'} price={'50000'} benifits={[{
                                 text: "Direct Mobile franchise",
-                                key: "20%"
+                                key: "10%"
                             },
                             { text: "Direct District franchise", key: "10%" },
-                            { text: " Mobile franchise referral", key: "12%" },
+                            { text: " Mobile franchise referral", key: "8%" },
                             { text: " Total customer earnings", key: "8%" },
-                            { text: " Product purchasing bonus", key: "6%" },
+                            { text: " Product purchasing bonus", key: "3%" },
                             ]} />
                             <PricingItem title={'Mobile Franchise'} price={'5000'} benifits={[{
                                 text: "Direct Mobile franchise",
-                                key: "20%"
+                                key: "10%"
                             },
                             { text: "Direct product referal", key: "10%" },
                             { text: " District/Zonal franchise", key: "10%" },
-                            { text: " Brokerage", key: "8%" },
-                            { text: " Product purchasing bonus", key: "6%" },
+                            { text: " Brokerage", key: "50%" },
+                            { text: " Product purchasing bonus", key: "25%" },
                             ]} />
                             {/* <div className="col-xl-4 col-lg-6 mt-30">
                             <div className="pricing-item">
